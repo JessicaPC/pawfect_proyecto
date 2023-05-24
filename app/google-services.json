@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "181127330153",
+    "project_id": "pawfect-dfee3",
+    "storage_bucket": "pawfect-dfee3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:181127330153:android:9e749b89b04074442365f8",
+        "android_client_info": {
+          "package_name": "com.example.pawfect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "181127330153-36mdbthscuj4bovlla50aj9n69s39vvb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYtMQLXozuX2RdiQPQE0c9AnnsX0lc9YE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "181127330153-36mdbthscuj4bovlla50aj9n69s39vvb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

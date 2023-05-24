@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/white"/>
+    <item>
+        <bitmap
+            android:src="@drawable/splash_img"
+            android:gravity="center"/>
+    </item>
+</layer-list>
+<!--
+ layer-list es un tipo de drawable que permite definir una lista
+ de dibujos que se apilan uno encima del otro en un orden específico. Cada dibujo se define como un elemento de la lista y se puede especificar su posición, tamaño y otros atributos.
+layer-list es útil para crear gráficos complejos que requieren
+múltiples capas, como iconos, botones y fondos personalizados.
+ Por ejemplo, se puede usar layer-list para crear un botón con
+ un fondo degradado y un icono superpuesto en la parte superior.
+-->

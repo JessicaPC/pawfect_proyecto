@@ -1,2 +1,0 @@
-# pawfect
-proyecto final

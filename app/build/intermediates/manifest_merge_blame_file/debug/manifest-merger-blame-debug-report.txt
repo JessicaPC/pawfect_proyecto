@@ -6,16 +6,16 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
-8-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml
+8-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="33" />
-9-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml
+9-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:5:5-67
-11-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:5:22-64
+11-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:5:5-67
+11-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:6:5-79
-12-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:6:22-76
+12-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:6:5-79
+12-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:6:22-76
 13    <uses-permission android:name="android.permission.WAKE_LOCK" />
 13-->[com.google.android.gms:play-services-measurement-api:21.2.2] /Users/jpicazoc/.gradle/caches/transforms-3/d54ff24ea2bd6bad07f8551889972a85/transformed/play-services-measurement-api-21.2.2/AndroidManifest.xml:24:5-68
 13-->[com.google.android.gms:play-services-measurement-api:21.2.2] /Users/jpicazoc/.gradle/caches/transforms-3/d54ff24ea2bd6bad07f8551889972a85/transformed/play-services-measurement-api-21.2.2/AndroidManifest.xml:24:22-65
@@ -38,69 +38,69 @@
 21-->[androidx.core:core:1.9.0] /Users/jpicazoc/.gradle/caches/transforms-3/85e83e612d366542311a95aa22b4d01a/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
 22
 23    <application
-23-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:8:5-39:19
+23-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:8:5-39:19
 24        android:allowBackup="true"
-24-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:9:9-35
+24-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:9:9-35
 25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 25-->[androidx.core:core:1.9.0] /Users/jpicazoc/.gradle/caches/transforms-3/85e83e612d366542311a95aa22b4d01a/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
 26        android:dataExtractionRules="@xml/data_extraction_rules"
-26-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:10:9-65
+26-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:10:9-65
 27        android:debuggable="true"
 28        android:extractNativeLibs="false"
 29        android:fullBackupContent="@xml/backup_rules"
-29-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:11:9-54
+29-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:11:9-54
 30        android:icon="@mipmap/ic_launcher"
-30-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:12:9-43
+30-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:12:9-43
 31        android:label="@string/app_name"
-31-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:13:9-41
+31-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:13:9-41
 32        android:roundIcon="@mipmap/ic_launcher_round"
-32-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:14:9-54
+32-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:14:9-54
 33        android:supportsRtl="true"
-33-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:15:9-35
+33-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:15:9-35
 34        android:testOnly="true"
 35        android:theme="@style/Theme.Pawfect" >
-35-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:16:9-45
+35-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:16:9-45
 36        <activity
-36-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:18:9-20:40
+36-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:18:9-20:40
 37            android:name="com.example.pawfect.ui.RecoverPasswordActivity"
-37-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:19:13-55
+37-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:19:13-55
 38            android:exported="false" />
-38-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:20:13-37
+38-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:20:13-37
 39        <activity
-39-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:21:9-24:52
+39-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:21:9-24:52
 40            android:name="com.example.pawfect.ui.RegisterActivity"
-40-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:22:13-48
+40-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:22:13-48
 41            android:exported="false"
-41-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:23:13-37
+41-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:23:13-37
 42            android:screenOrientation="portrait" />
-42-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:24:13-49
+42-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:24:13-49
 43        <activity
-43-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:25:9-35:20
+43-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:25:9-35:20
 44            android:name="com.example.pawfect.ui.LoginActivity"
-44-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:26:13-45
+44-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:26:13-45
 45            android:exported="true"
-45-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:27:13-36
+45-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:27:13-36
 46            android:screenOrientation="portrait"
-46-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:28:13-49
+46-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:28:13-49
 47            android:theme="@style/SplashTheme" >
-47-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:29:13-47
+47-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:29:13-47
 48            <intent-filter>
-48-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:30:13-34:29
+48-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:30:13-34:29
 49                <action android:name="android.intent.action.MAIN" />
-49-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:31:17-69
-49-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:31:25-66
+49-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:31:17-69
+49-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:31:25-66
 50
 51                <category android:name="android.intent.category.LAUNCHER" />
-51-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:33:17-77
-51-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:33:27-74
+51-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:33:17-77
+51-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:33:27-74
 52            </intent-filter>
 53        </activity>
 54        <activity
-54-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:36:9-38:40
+54-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:36:9-38:40
 55            android:name="com.example.pawfect.ui.MainActivity"
-55-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:37:13-44
+55-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:37:13-44
 56            android:exported="false" />
-56-->/Users/jpicazoc/projectoJessi/pawfect/app/src/main/AndroidManifest.xml:38:13-37
+56-->/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:38:13-37
 57
 58        <service
 58-->[com.google.firebase:firebase-auth-ktx:22.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/28d60b05470ec5f4e504f6ca537a0a02/transformed/firebase-auth-ktx-22.0.0/AndroidManifest.xml:8:9-14:19
