@@ -41,7 +41,11 @@ class HomeFragment : Fragment() {
             Animal("Gato", R.drawable.cat_img),
             Animal("Gato2", R.drawable.cat2_img),
             Animal("Perro", R.drawable.dog_img),
-            Animal("Perro2", R.drawable.dog2_img)
+            Animal("Perro2", R.drawable.dog2_img),
+            Animal("Perro3", R.drawable.dog3_img),
+            Animal("Perro4", R.drawable.dog4_img),
+            Animal("Gato3", R.drawable.cat3_img),
+            Animal("Gato4", R.drawable.cat4_img)
         )
     }
 }

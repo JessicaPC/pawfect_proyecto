@@ -35,7 +35,8 @@
         android:theme="@style/Theme.Pawfect" >
         <activity
             android:name="com.example.pawfect.ui.RecoverPasswordActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.pawfect.ui.RegisterActivity"
             android:exported="false"
@@ -53,7 +54,8 @@
         </activity>
         <activity
             android:name="com.example.pawfect.ui.MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"
