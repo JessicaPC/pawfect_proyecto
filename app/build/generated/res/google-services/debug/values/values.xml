@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">181127330153-36mdbthscuj4bovlla50aj9n69s39vvb.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">181127330153</string>
+    <string name="google_api_key" translatable="false">AIzaSyBYtMQLXozuX2RdiQPQE0c9AnnsX0lc9YE</string>
+    <string name="google_app_id" translatable="false">1:181127330153:android:9e749b89b04074442365f8</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBYtMQLXozuX2RdiQPQE0c9AnnsX0lc9YE</string>
+    <string name="google_storage_bucket" translatable="false">pawfect-dfee3.appspot.com</string>
+    <string name="project_id" translatable="false">pawfect-dfee3</string>
+</resources>
