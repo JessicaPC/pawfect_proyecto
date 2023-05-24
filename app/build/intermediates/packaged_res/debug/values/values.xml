@@ -12,9 +12,11 @@
     <string name="google_storage_bucket" translatable="false">pawfect-dfee3.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="project_id" translatable="false">pawfect-dfee3</string>
-    <style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         
         <item name="colorPrimary">@color/orange</item>
+        <item name="android:statusBarColor">@color/orange</item>
+        <item name="android:navigationBarColor">@android:color/white</item>
 
 
     </style>
