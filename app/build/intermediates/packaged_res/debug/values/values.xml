@@ -16,7 +16,7 @@
         
         <item name="colorPrimary">@color/orange</item>
         <item name="android:statusBarColor">@color/orange</item>
-        <item name="android:navigationBarColor">@android:color/white</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
 
 
     </style>

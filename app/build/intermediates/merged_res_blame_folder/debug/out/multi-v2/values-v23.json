@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.pawfect.app-mergeDebugResources-42:/values-v23/values-v23.xml",
+            "outputFile": "com.example.pawfect.app-mergeDebugResources-43:/values-v23/values-v23.xml",
             "map": [
                 {
                     "source": "/Users/jpicazoc/.gradle/caches/transforms-3/dfe5af8deffdb7ab60f9017603e62f2b/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",

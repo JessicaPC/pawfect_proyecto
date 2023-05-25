@@ -1,214 +1,218 @@
 [
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "com.example.pawfect.app-main-46:/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "com.example.pawfect.app-merged_res-45:/layout_activity_recover_password.xml.flat",
+        "source": "com.example.pawfect.app-main-47:/layout/activity_recover_password.xml"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/drawable_cat3_img.jpeg.flat",
-        "source": "com.example.pawfect.app-main-46:/drawable/cat3_img.jpeg"
+        "merged": "com.example.pawfect.app-merged_res-45:/layout_fragment_publications.xml.flat",
+        "source": "com.example.pawfect.app-main-47:/layout/fragment_publications.xml"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.pawfect.app-main-46:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "com.example.pawfect.app-merged_res-45:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.example.pawfect.app-main-47:/menu/bottom_nav_menu.xml"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/drawable_person_logo.xml.flat",
-        "source": "com.example.pawfect.app-main-46:/drawable/person_logo.xml"
+        "merged": "com.example.pawfect.app-merged_res-45:/raw_send_email.json.flat",
+        "source": "com.example.pawfect.app-main-47:/raw/send_email.json"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.pawfect.app-main-46:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "com.example.pawfect.app-merged_res-45:/drawable_splash.xml.flat",
+        "source": "com.example.pawfect.app-main-47:/drawable/splash.xml"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/layout_fragment_home.xml.flat",
-        "source": "com.example.pawfect.app-main-46:/layout/fragment_home.xml"
+        "merged": "com.example.pawfect.app-merged_res-45:/drawable_cat2_img.jpeg.flat",
+        "source": "com.example.pawfect.app-main-47:/drawable/cat2_img.jpeg"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.pawfect.app-main-46:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "com.example.pawfect.app-merged_res-45:/layout_fragment_profile.xml.flat",
+        "source": "com.example.pawfect.app-main-47:/layout/fragment_profile.xml"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/drawable_ic_arrow_back.xml.flat",
-        "source": "com.example.pawfect.app-main-46:/drawable/ic_arrow_back.xml"
+        "merged": "com.example.pawfect.app-merged_res-45:/layout_fragment_adoptions.xml.flat",
+        "source": "com.example.pawfect.app-main-47:/layout/fragment_adoptions.xml"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/drawable_splash.xml.flat",
-        "source": "com.example.pawfect.app-main-46:/drawable/splash.xml"
+        "merged": "com.example.pawfect.app-merged_res-45:/layout_activity_main.xml.flat",
+        "source": "com.example.pawfect.app-main-47:/layout/activity_main.xml"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.pawfect.app-main-46:/drawable/ic_launcher_background.xml"
+        "merged": "com.example.pawfect.app-merged_res-45:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.pawfect.app-main-47:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.pawfect.app-main-46:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "com.example.pawfect.app-merged_res-45:/drawable_dog4_img.jpeg.flat",
+        "source": "com.example.pawfect.app-main-47:/drawable/dog4_img.jpeg"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/xml_backup_rules.xml.flat",
-        "source": "com.example.pawfect.app-main-46:/xml/backup_rules.xml"
+        "merged": "com.example.pawfect.app-merged_res-45:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.pawfect.app-main-47:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/drawable_adoption_ic60.png.flat",
-        "source": "com.example.pawfect.app-main-46:/drawable/adoption_ic60.png"
+        "merged": "com.example.pawfect.app-merged_res-45:/drawable_dog_img.jpeg.flat",
+        "source": "com.example.pawfect.app-main-47:/drawable/dog_img.jpeg"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.pawfect.app-main-46:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "com.example.pawfect.app-merged_res-45:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.pawfect.app-main-47:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/drawable_favorite_icon.png.flat",
-        "source": "com.example.pawfect.app-main-46:/drawable/favorite_icon.png"
+        "merged": "com.example.pawfect.app-merged_res-45:/layout_activity_register.xml.flat",
+        "source": "com.example.pawfect.app-main-47:/layout/activity_register.xml"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.pawfect.app-main-46:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "com.example.pawfect.app-merged_res-45:/layout_activity_login.xml.flat",
+        "source": "com.example.pawfect.app-main-47:/layout/activity_login.xml"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.pawfect.app-main-46:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "com.example.pawfect.app-merged_res-45:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.pawfect.app-main-47:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/layout_fragment_publications.xml.flat",
-        "source": "com.example.pawfect.app-main-46:/layout/fragment_publications.xml"
+        "merged": "com.example.pawfect.app-merged_res-45:/drawable_home_icon.png.flat",
+        "source": "com.example.pawfect.app-main-47:/drawable/home_icon.png"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/raw_pending_email.json.flat",
-        "source": "com.example.pawfect.app-main-46:/raw/pending_email.json"
+        "merged": "com.example.pawfect.app-merged_res-45:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.pawfect.app-main-47:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/drawable_dog2_img.jpeg.flat",
-        "source": "com.example.pawfect.app-main-46:/drawable/dog2_img.jpeg"
+        "merged": "com.example.pawfect.app-merged_res-45:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.pawfect.app-main-47:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/drawable_google_logo.xml.flat",
-        "source": "com.example.pawfect.app-main-46:/drawable/google_logo.xml"
+        "merged": "com.example.pawfect.app-merged_res-45:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.pawfect.app-main-47:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/layout_fragment_profile.xml.flat",
-        "source": "com.example.pawfect.app-main-46:/layout/fragment_profile.xml"
+        "merged": "com.example.pawfect.app-merged_res-45:/drawable_logout_ic.xml.flat",
+        "source": "com.example.pawfect.app-main-47:/drawable/logout_ic.xml"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/drawable_cat4_img.jpeg.flat",
-        "source": "com.example.pawfect.app-main-46:/drawable/cat4_img.jpeg"
+        "merged": "com.example.pawfect.app-merged_res-45:/layout_fragment_home.xml.flat",
+        "source": "com.example.pawfect.app-main-47:/layout/fragment_home.xml"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/drawable_dog3_img.jpeg.flat",
-        "source": "com.example.pawfect.app-main-46:/drawable/dog3_img.jpeg"
+        "merged": "com.example.pawfect.app-merged_res-45:/raw_splash_animation.json.flat",
+        "source": "com.example.pawfect.app-main-47:/raw/splash_animation.json"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/layout_animal_item.xml.flat",
-        "source": "com.example.pawfect.app-main-46:/layout/animal_item.xml"
+        "merged": "com.example.pawfect.app-merged_res-45:/drawable_dog3_img.jpeg.flat",
+        "source": "com.example.pawfect.app-main-47:/drawable/dog3_img.jpeg"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/drawable_splash_img.png.flat",
-        "source": "com.example.pawfect.app-main-46:/drawable/splash_img.png"
+        "merged": "com.example.pawfect.app-merged_res-45:/drawable_google_logo.xml.flat",
+        "source": "com.example.pawfect.app-main-47:/drawable/google_logo.xml"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/drawable_cat_img.jpeg.flat",
-        "source": "com.example.pawfect.app-main-46:/drawable/cat_img.jpeg"
+        "merged": "com.example.pawfect.app-merged_res-45:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.pawfect.app-main-47:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/drawable_key_logo.xml.flat",
-        "source": "com.example.pawfect.app-main-46:/drawable/key_logo.xml"
+        "merged": "com.example.pawfect.app-merged_res-45:/drawable_cat_img.jpeg.flat",
+        "source": "com.example.pawfect.app-main-47:/drawable/cat_img.jpeg"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/raw_register_animation.json.flat",
-        "source": "com.example.pawfect.app-main-46:/raw/register_animation.json"
+        "merged": "com.example.pawfect.app-merged_res-45:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.pawfect.app-main-47:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/drawable_dog4_img.jpeg.flat",
-        "source": "com.example.pawfect.app-main-46:/drawable/dog4_img.jpeg"
+        "merged": "com.example.pawfect.app-merged_res-45:/drawable_splash_img.png.flat",
+        "source": "com.example.pawfect.app-main-47:/drawable/splash_img.png"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/menu_bottom_nav_menu.xml.flat",
-        "source": "com.example.pawfect.app-main-46:/menu/bottom_nav_menu.xml"
+        "merged": "com.example.pawfect.app-merged_res-45:/menu_settings_menu.xml.flat",
+        "source": "com.example.pawfect.app-main-47:/menu/settings_menu.xml"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/drawable_location_ic.xml.flat",
-        "source": "com.example.pawfect.app-main-46:/drawable/location_ic.xml"
+        "merged": "com.example.pawfect.app-merged_res-45:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.pawfect.app-main-47:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/drawable_cat2_img.jpeg.flat",
-        "source": "com.example.pawfect.app-main-46:/drawable/cat2_img.jpeg"
+        "merged": "com.example.pawfect.app-merged_res-45:/drawable_favorite_icon.png.flat",
+        "source": "com.example.pawfect.app-main-47:/drawable/favorite_icon.png"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/drawable_pawfect_logo.png.flat",
-        "source": "com.example.pawfect.app-main-46:/drawable/pawfect_logo.png"
+        "merged": "com.example.pawfect.app-merged_res-45:/drawable_key_logo.xml.flat",
+        "source": "com.example.pawfect.app-main-47:/drawable/key_logo.xml"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.pawfect.app-main-46:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "com.example.pawfect.app-merged_res-45:/layout_fragment_favorites.xml.flat",
+        "source": "com.example.pawfect.app-main-47:/layout/fragment_favorites.xml"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.pawfect.app-main-46:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "com.example.pawfect.app-merged_res-45:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.pawfect.app-main-47:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/layout_activity_login.xml.flat",
-        "source": "com.example.pawfect.app-main-46:/layout/activity_login.xml"
+        "merged": "com.example.pawfect.app-merged_res-45:/drawable_pawfect_logo.png.flat",
+        "source": "com.example.pawfect.app-main-47:/drawable/pawfect_logo.png"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/layout_activity_recover_password.xml.flat",
-        "source": "com.example.pawfect.app-main-46:/layout/activity_recover_password.xml"
+        "merged": "com.example.pawfect.app-merged_res-45:/layout_animal_item.xml.flat",
+        "source": "com.example.pawfect.app-main-47:/layout/animal_item.xml"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/layout_fragment_adoptions.xml.flat",
-        "source": "com.example.pawfect.app-main-46:/layout/fragment_adoptions.xml"
+        "merged": "com.example.pawfect.app-merged_res-45:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.pawfect.app-main-47:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.pawfect.app-main-46:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "com.example.pawfect.app-merged_res-45:/drawable_ic_arrow_back.xml.flat",
+        "source": "com.example.pawfect.app-main-47:/drawable/ic_arrow_back.xml"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/drawable_logout_ic.xml.flat",
-        "source": "com.example.pawfect.app-main-46:/drawable/logout_ic.xml"
+        "merged": "com.example.pawfect.app-merged_res-45:/drawable_cat4_img.jpeg.flat",
+        "source": "com.example.pawfect.app-main-47:/drawable/cat4_img.jpeg"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.pawfect.app-main-46:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.example.pawfect.app-merged_res-45:/drawable_person_logo.xml.flat",
+        "source": "com.example.pawfect.app-main-47:/drawable/person_logo.xml"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/layout_fragment_favorites.xml.flat",
-        "source": "com.example.pawfect.app-main-46:/layout/fragment_favorites.xml"
+        "merged": "com.example.pawfect.app-merged_res-45:/raw_register_animation.json.flat",
+        "source": "com.example.pawfect.app-main-47:/raw/register_animation.json"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.pawfect.app-main-46:/xml/data_extraction_rules.xml"
+        "merged": "com.example.pawfect.app-merged_res-45:/drawable_location_ic.xml.flat",
+        "source": "com.example.pawfect.app-main-47:/drawable/location_ic.xml"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/drawable_home_icon.png.flat",
-        "source": "com.example.pawfect.app-main-46:/drawable/home_icon.png"
+        "merged": "com.example.pawfect.app-merged_res-45:/drawable_email_logo.xml.flat",
+        "source": "com.example.pawfect.app-main-47:/drawable/email_logo.xml"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/drawable_publication_ic60.png.flat",
-        "source": "com.example.pawfect.app-main-46:/drawable/publication_ic60.png"
+        "merged": "com.example.pawfect.app-merged_res-45:/xml_backup_rules.xml.flat",
+        "source": "com.example.pawfect.app-main-47:/xml/backup_rules.xml"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/drawable_dog_img.jpeg.flat",
-        "source": "com.example.pawfect.app-main-46:/drawable/dog_img.jpeg"
+        "merged": "com.example.pawfect.app-merged_res-45:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.pawfect.app-main-47:/drawable-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/menu_settings_menu.xml.flat",
-        "source": "com.example.pawfect.app-main-46:/menu/settings_menu.xml"
+        "merged": "com.example.pawfect.app-merged_res-45:/drawable_dog2_img.jpeg.flat",
+        "source": "com.example.pawfect.app-main-47:/drawable/dog2_img.jpeg"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/layout_activity_register.xml.flat",
-        "source": "com.example.pawfect.app-main-46:/layout/activity_register.xml"
+        "merged": "com.example.pawfect.app-merged_res-45:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.pawfect.app-main-47:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/raw_send_email.json.flat",
-        "source": "com.example.pawfect.app-main-46:/raw/send_email.json"
+        "merged": "com.example.pawfect.app-merged_res-45:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.pawfect.app-main-47:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/layout_activity_main.xml.flat",
-        "source": "com.example.pawfect.app-main-46:/layout/activity_main.xml"
+        "merged": "com.example.pawfect.app-merged_res-45:/raw_pending_email.json.flat",
+        "source": "com.example.pawfect.app-main-47:/raw/pending_email.json"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.pawfect.app-main-46:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "com.example.pawfect.app-merged_res-45:/drawable_adoption_ic60.png.flat",
+        "source": "com.example.pawfect.app-main-47:/drawable/adoption_ic60.png"
     },
     {
-        "merged": "com.example.pawfect.app-merged_res-44:/drawable_email_logo.xml.flat",
-        "source": "com.example.pawfect.app-main-46:/drawable/email_logo.xml"
+        "merged": "com.example.pawfect.app-merged_res-45:/drawable_publication_ic60.png.flat",
+        "source": "com.example.pawfect.app-main-47:/drawable/publication_ic60.png"
+    },
+    {
+        "merged": "com.example.pawfect.app-merged_res-45:/drawable_cat3_img.jpeg.flat",
+        "source": "com.example.pawfect.app-main-47:/drawable/cat3_img.jpeg"
     }
 ]

@@ -79,6 +79,7 @@ mipmap ic_launcher_round
 raw pending_email
 raw register_animation
 raw send_email
+raw splash_animation
 string app_name
 string default_web_client_id
 string gcm_defaultSenderId

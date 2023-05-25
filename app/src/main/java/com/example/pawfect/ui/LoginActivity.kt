@@ -20,7 +20,7 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         // Tema splash
-        //Thread.sleep(1000)
+        //Thread.sleep(2000)
         setTheme(R.style.AppTheme)
 
         binding = ActivityLoginBinding.inflate(layoutInflater, null, false)

@@ -1,11 +1,12 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:2:1-44:12
-INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:2:1-44:12
-INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:2:1-44:12
-INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:2:1-44:12
+ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-44:12
 MERGED from [androidx.databinding:viewbinding:8.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/c82f6a36e6fd22dcac9362c818107846/transformed/viewbinding-8.0.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-auth-ktx:22.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/28d60b05470ec5f4e504f6ca537a0a02/transformed/firebase-auth-ktx-22.0.0/AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.firebase:firebase-firestore-ktx:24.6.0] /Users/jpicazoc/.gradle/caches/transforms-3/175393c88ba736b3b594ac0508b55d24/transformed/firebase-firestore-ktx-24.6.0/AndroidManifest.xml:2:1-20:12
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.2.2] /Users/jpicazoc/.gradle/caches/transforms-3/fb2e4c872853a50edc778682b41df511/transformed/firebase-analytics-ktx-21.2.2/AndroidManifest.xml:2:1-17:12
 MERGED from [com.google.firebase:firebase-common-ktx:20.3.2] /Users/jpicazoc/.gradle/caches/transforms-3/9a54bf7473b42cd89be49120e83dd5b6/transformed/firebase-common-ktx-20.3.2/AndroidManifest.xml:2:1-20:12
 MERGED from [com.google.firebase:firebase-auth:22.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/cbc1517a8ddcc0073f3f87ae7561e316/transformed/firebase-auth-22.0.0/AndroidManifest.xml:17:1-75:12
@@ -22,7 +23,9 @@ MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/jpicazoc/.gradle/caches/
 MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] /Users/jpicazoc/.gradle/caches/transforms-3/293df5f2e6ede2d09f13667488a1d6e8/transformed/play-services-auth-api-phone-18.0.1/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] /Users/jpicazoc/.gradle/caches/transforms-3/f8ed700884f13e0535caa9025eeefed0/transformed/play-services-auth-base-18.0.4/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-fido:20.0.1] /Users/jpicazoc/.gradle/caches/transforms-3/6136718e73960f2ea756426bf2c4948d/transformed/play-services-fido-20.0.1/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-firestore:24.6.0] /Users/jpicazoc/.gradle/caches/transforms-3/9037fdc7afd92e85dbba1a929f21b348/transformed/firebase-firestore-24.6.0/AndroidManifest.xml:2:1-25:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/484ebe90a111f8430b09093c9b28812e/transformed/firebase-appcheck-interop-17.0.0/AndroidManifest.xml:15:1-25:12
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/jpicazoc/.gradle/caches/transforms-3/8c2ae73a0326a3f279980e8f9b2981aa/transformed/firebase-database-collection-18.0.1/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/jpicazoc/.gradle/caches/transforms-3/e1567fc10e45fc3b0d691c668af048a4/transformed/play-services-base-18.0.1/AndroidManifest.xml:16:1-24:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/24f3e5f33ef74946c4c33b32e6571afa/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-analytics:21.2.2] /Users/jpicazoc/.gradle/caches/transforms-3/c7bea6fa9c0151b368a7e9f63d4b72ad/transformed/firebase-analytics-21.2.2/AndroidManifest.xml:2:1-9:12
@@ -67,8 +70,9 @@ MERGED from [androidx.customview:customview:1.1.0] /Users/jpicazoc/.gradle/cache
 MERGED from [androidx.transition:transition:1.3.0] /Users/jpicazoc/.gradle/caches/transforms-3/a3dce777d031420820d003e77b6ed4d8/transformed/transition-1.3.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.3.5] /Users/jpicazoc/.gradle/caches/transforms-3/a896955f69ea6cbe4e30db8324db7b9c/transformed/navigation-common-ktx-2.3.5/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-common:2.3.5] /Users/jpicazoc/.gradle/caches/transforms-3/13ebadbd33ca39a657d6beb5a0629a52/transformed/navigation-common-2.3.5/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core:1.9.0] /Users/jpicazoc/.gradle/caches/transforms-3/85e83e612d366542311a95aa22b4d01a/transformed/core-1.9.0/AndroidManifest.xml:17:1-30:12
-MERGED from [androidx.core:core-ktx:1.9.0] /Users/jpicazoc/.gradle/caches/transforms-3/1441b7c17e90412781ec8bfcfc9fb82c/transformed/core-ktx-1.9.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.core:core:1.10.0] /Users/jpicazoc/.gradle/caches/transforms-3/db85a864bbaa1e6d72a85f8440054db1/transformed/core-1.10.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.core:core-ktx:1.10.0] /Users/jpicazoc/.gradle/caches/transforms-3/2d884c1a75e9733806b79a3dfb7e0b22/transformed/core-ktx-1.10.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.core:core-splashscreen:1.0.1] /Users/jpicazoc/.gradle/caches/transforms-3/6bf1ee89d2353f9eb3905e46d9f32eb0/transformed/core-splashscreen-1.0.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/3d9d75ef1b9dcc329e6f6a328ece5729/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/jpicazoc/.gradle/caches/transforms-3/028230f0bfdb2fe8cde9b42200ffb96e/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:17:1-37:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /Users/jpicazoc/.gradle/caches/transforms-3/461f9944dbbd77d0cc12a24e87fefa47/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml:17:1-24:12
@@ -77,42 +81,46 @@ MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/jpicazoc/.gradle/cache
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/dfe5af8deffdb7ab60f9017603e62f2b/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-components:17.1.0] /Users/jpicazoc/.gradle/caches/transforms-3/ba0ce8b40e710f2939c6424027b672be/transformed/firebase-components-17.1.0/AndroidManifest.xml:15:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/1bb8a7ca8f150c0e034c5479a3ad9043/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/1988c516254e301da8b780502fa0834b/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/jpicazoc/.gradle/caches/transforms-3/a2c01acb5d84249abc94d5eebd6abf66/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/jpicazoc/.gradle/caches/transforms-3/408b1e1bb9007f39b21eed12544635d3/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/733fade0b0b85b87a8b635ec7ced1bef/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/6041cb9b3118cdd665fbae4bec0d4d9e/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /Users/jpicazoc/.gradle/caches/transforms-3/c83fb9ceaeb9d4d0966747c25df10da4/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/jpicazoc/.gradle/caches/transforms-3/e2bce3ffbb41ab8adca0d05a93014a0e/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/1988c516254e301da8b780502fa0834b/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/e43001e428b9f2bfdf0d6a68489b110f/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/5439d4161990756b770487415ea963c5/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.flexbox:flexbox:3.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/21e3d23056551a66353abb1818488c1a/transformed/flexbox-3.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/jpicazoc/.gradle/caches/transforms-3/1b18357500a1c8d219556b3fb65efb1c/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:2:1-44:12
-INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:2:1-44:12
-INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:2:1-44:12
+MERGED from [io.grpc:grpc-android:1.52.1] /Users/jpicazoc/.gradle/caches/transforms-3/51f4499e0f50e981f3662e623ffdbca8/transformed/grpc-android-1.52.1/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/7b09ff6e14b8684216bacfdffbb0064f/transformed/protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
+INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-44:12
 	package
-		INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:2:1-44:12
-		INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-44:12
+		INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:2:1-44:12
-		INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-44:12
+		INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:3:5-51
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:2:1-44:12
-		INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-44:12
+		INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:5:5-67
+ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:5:5-67
 MERGED from [com.google.firebase:firebase-auth:22.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/cbc1517a8ddcc0073f3f87ae7561e316/transformed/firebase-auth-22.0.0/AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-auth:22.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/cbc1517a8ddcc0073f3f87ae7561e316/transformed/firebase-auth-22.0.0/AndroidManifest.xml:25:5-67
 MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /Users/jpicazoc/.gradle/caches/transforms-3/8f143368a4d3fad6613ef7ef7c0259ea/transformed/recaptcha-18.1.2/AndroidManifest.xml:7:5-67
 MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /Users/jpicazoc/.gradle/caches/transforms-3/8f143368a4d3fad6613ef7ef7c0259ea/transformed/recaptcha-18.1.2/AndroidManifest.xml:7:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.6.0] /Users/jpicazoc/.gradle/caches/transforms-3/9037fdc7afd92e85dbba1a929f21b348/transformed/firebase-firestore-24.6.0/AndroidManifest.xml:13:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.6.0] /Users/jpicazoc/.gradle/caches/transforms-3/9037fdc7afd92e85dbba1a929f21b348/transformed/firebase-firestore-24.6.0/AndroidManifest.xml:13:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.2] /Users/jpicazoc/.gradle/caches/transforms-3/d54ff24ea2bd6bad07f8551889972a85/transformed/play-services-measurement-api-21.2.2/AndroidManifest.xml:22:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.2] /Users/jpicazoc/.gradle/caches/transforms-3/d54ff24ea2bd6bad07f8551889972a85/transformed/play-services-measurement-api-21.2.2/AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-installations:17.1.3] /Users/jpicazoc/.gradle/caches/transforms-3/00e6fa1e519e73303aaafc357e94c60f/transformed/firebase-installations-17.1.3/AndroidManifest.xml:10:5-67
@@ -124,13 +132,15 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.2] /User
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.2] /Users/jpicazoc/.gradle/caches/transforms-3/d93fecb12b935dfa8c049d1af7f3e571/transformed/play-services-measurement-sdk-api-21.2.2/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.2] /Users/jpicazoc/.gradle/caches/transforms-3/d93fecb12b935dfa8c049d1af7f3e571/transformed/play-services-measurement-sdk-api-21.2.2/AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:5:22-64
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:6:5-79
+ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:6:5-79
 MERGED from [com.google.firebase:firebase-auth:22.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/cbc1517a8ddcc0073f3f87ae7561e316/transformed/firebase-auth-22.0.0/AndroidManifest.xml:26:5-79
 MERGED from [com.google.firebase:firebase-auth:22.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/cbc1517a8ddcc0073f3f87ae7561e316/transformed/firebase-auth-22.0.0/AndroidManifest.xml:26:5-79
 MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /Users/jpicazoc/.gradle/caches/transforms-3/8f143368a4d3fad6613ef7ef7c0259ea/transformed/recaptcha-18.1.2/AndroidManifest.xml:8:5-79
 MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /Users/jpicazoc/.gradle/caches/transforms-3/8f143368a4d3fad6613ef7ef7c0259ea/transformed/recaptcha-18.1.2/AndroidManifest.xml:8:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.6.0] /Users/jpicazoc/.gradle/caches/transforms-3/9037fdc7afd92e85dbba1a929f21b348/transformed/firebase-firestore-24.6.0/AndroidManifest.xml:12:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.6.0] /Users/jpicazoc/.gradle/caches/transforms-3/9037fdc7afd92e85dbba1a929f21b348/transformed/firebase-firestore-24.6.0/AndroidManifest.xml:12:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.2] /Users/jpicazoc/.gradle/caches/transforms-3/d54ff24ea2bd6bad07f8551889972a85/transformed/play-services-measurement-api-21.2.2/AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.2] /Users/jpicazoc/.gradle/caches/transforms-3/d54ff24ea2bd6bad07f8551889972a85/transformed/play-services-measurement-api-21.2.2/AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-installations:17.1.3] /Users/jpicazoc/.gradle/caches/transforms-3/00e6fa1e519e73303aaafc357e94c60f/transformed/firebase-installations-17.1.3/AndroidManifest.xml:9:5-79
@@ -141,12 +151,16 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.2] /User
 MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.2] /Users/jpicazoc/.gradle/caches/transforms-3/8e1af10499f9ef540e31d41e67e855cc/transformed/play-services-measurement-impl-21.2.2/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.2] /Users/jpicazoc/.gradle/caches/transforms-3/d93fecb12b935dfa8c049d1af7f3e571/transformed/play-services-measurement-sdk-api-21.2.2/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.2] /Users/jpicazoc/.gradle/caches/transforms-3/d93fecb12b935dfa8c049d1af7f3e571/transformed/play-services-measurement-sdk-api-21.2.2/AndroidManifest.xml:24:5-79
+MERGED from [io.grpc:grpc-android:1.52.1] /Users/jpicazoc/.gradle/caches/transforms-3/51f4499e0f50e981f3662e623ffdbca8/transformed/grpc-android-1.52.1/AndroidManifest.xml:9:5-79
+MERGED from [io.grpc:grpc-android:1.52.1] /Users/jpicazoc/.gradle/caches/transforms-3/51f4499e0f50e981f3662e623ffdbca8/transformed/grpc-android-1.52.1/AndroidManifest.xml:9:5-79
 	android:name
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:6:22-76
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:6:22-76
 application
-ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:8:5-42:19
+ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:8:5-42:19
 MERGED from [com.google.firebase:firebase-auth-ktx:22.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/28d60b05470ec5f4e504f6ca537a0a02/transformed/firebase-auth-ktx-22.0.0/AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.firebase:firebase-auth-ktx:22.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/28d60b05470ec5f4e504f6ca537a0a02/transformed/firebase-auth-ktx-22.0.0/AndroidManifest.xml:7:5-15:19
+MERGED from [com.google.firebase:firebase-firestore-ktx:24.6.0] /Users/jpicazoc/.gradle/caches/transforms-3/175393c88ba736b3b594ac0508b55d24/transformed/firebase-firestore-ktx-24.6.0/AndroidManifest.xml:10:5-18:19
+MERGED from [com.google.firebase:firebase-firestore-ktx:24.6.0] /Users/jpicazoc/.gradle/caches/transforms-3/175393c88ba736b3b594ac0508b55d24/transformed/firebase-firestore-ktx-24.6.0/AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.2.2] /Users/jpicazoc/.gradle/caches/transforms-3/fb2e4c872853a50edc778682b41df511/transformed/firebase-analytics-ktx-21.2.2/AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.2.2] /Users/jpicazoc/.gradle/caches/transforms-3/fb2e4c872853a50edc778682b41df511/transformed/firebase-analytics-ktx-21.2.2/AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.3.2] /Users/jpicazoc/.gradle/caches/transforms-3/9a54bf7473b42cd89be49120e83dd5b6/transformed/firebase-common-ktx-20.3.2/AndroidManifest.xml:10:5-18:19
@@ -163,6 +177,8 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/jpicazoc/.
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/jpicazoc/.gradle/caches/transforms-3/559fa8251e7cfc20a1dd6989675b877c/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services-fido:20.0.1] /Users/jpicazoc/.gradle/caches/transforms-3/6136718e73960f2ea756426bf2c4948d/transformed/play-services-fido-20.0.1/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.android.gms:play-services-fido:20.0.1] /Users/jpicazoc/.gradle/caches/transforms-3/6136718e73960f2ea756426bf2c4948d/transformed/play-services-fido-20.0.1/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-firestore:24.6.0] /Users/jpicazoc/.gradle/caches/transforms-3/9037fdc7afd92e85dbba1a929f21b348/transformed/firebase-firestore-24.6.0/AndroidManifest.xml:15:5-23:19
+MERGED from [com.google.firebase:firebase-firestore:24.6.0] /Users/jpicazoc/.gradle/caches/transforms-3/9037fdc7afd92e85dbba1a929f21b348/transformed/firebase-firestore-24.6.0/AndroidManifest.xml:15:5-23:19
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/484ebe90a111f8430b09093c9b28812e/transformed/firebase-appcheck-interop-17.0.0/AndroidManifest.xml:23:5-20
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/484ebe90a111f8430b09093c9b28812e/transformed/firebase-appcheck-interop-17.0.0/AndroidManifest.xml:23:5-20
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/jpicazoc/.gradle/caches/transforms-3/e1567fc10e45fc3b0d691c668af048a4/transformed/play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
@@ -199,8 +215,8 @@ MERGED from [com.google.android.gms:play-services-basement:18.2.0] /Users/jpicaz
 MERGED from [com.google.android.gms:play-services-basement:18.2.0] /Users/jpicazoc/.gradle/caches/transforms-3/0880b12317d46b54e2b7fdf601431f63/transformed/play-services-basement-18.2.0/AndroidManifest.xml:20:5-24:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/jpicazoc/.gradle/caches/transforms-3/dae917e5bd4d784b49b92758b17f6192/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/jpicazoc/.gradle/caches/transforms-3/dae917e5bd4d784b49b92758b17f6192/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.core:core:1.9.0] /Users/jpicazoc/.gradle/caches/transforms-3/85e83e612d366542311a95aa22b4d01a/transformed/core-1.9.0/AndroidManifest.xml:28:5-89
-MERGED from [androidx.core:core:1.9.0] /Users/jpicazoc/.gradle/caches/transforms-3/85e83e612d366542311a95aa22b4d01a/transformed/core-1.9.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.10.0] /Users/jpicazoc/.gradle/caches/transforms-3/db85a864bbaa1e6d72a85f8440054db1/transformed/core-1.10.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.10.0] /Users/jpicazoc/.gradle/caches/transforms-3/db85a864bbaa1e6d72a85f8440054db1/transformed/core-1.10.0/AndroidManifest.xml:28:5-89
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/jpicazoc/.gradle/caches/transforms-3/028230f0bfdb2fe8cde9b42200ffb96e/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:25:5-35:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/jpicazoc/.gradle/caches/transforms-3/028230f0bfdb2fe8cde9b42200ffb96e/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:25:5-35:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/jpicazoc/.gradle/caches/transforms-3/a2c01acb5d84249abc94d5eebd6abf66/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
@@ -208,77 +224,79 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/jpic
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/jpicazoc/.gradle/caches/transforms-3/408b1e1bb9007f39b21eed12544635d3/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/jpicazoc/.gradle/caches/transforms-3/408b1e1bb9007f39b21eed12544635d3/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.9.0] /Users/jpicazoc/.gradle/caches/transforms-3/85e83e612d366542311a95aa22b4d01a/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+		ADDED from [androidx.core:core:1.10.0] /Users/jpicazoc/.gradle/caches/transforms-3/db85a864bbaa1e6d72a85f8440054db1/transformed/core-1.10.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:15:9-35
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:15:9-35
 	android:label
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:13:9-41
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:13:9-41
 	android:fullBackupContent
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:11:9-54
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:11:9-54
 	android:roundIcon
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:14:9-54
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:14:9-54
 	tools:targetApi
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:17:9-29
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:17:9-29
 	android:icon
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:12:9-43
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:12:9-43
 	android:allowBackup
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:9:9-35
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:16:9-45
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:16:9-45
 	android:dataExtractionRules
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:10:9-65
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:10:9-65
 activity#com.example.pawfect.ui.RecoverPasswordActivity
-ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:18:9-22:15
+ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:18:9-22:15
 	android:screenOrientation
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:21:13-49
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:21:13-49
 	android:exported
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:20:13-37
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:20:13-37
 	android:name
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:19:13-55
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:19:13-55
 activity#com.example.pawfect.ui.RegisterActivity
-ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:23:9-26:52
+ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:23:9-26:52
 	android:screenOrientation
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:26:13-49
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:26:13-49
 	android:exported
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:25:13-37
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:25:13-37
 	android:name
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:24:13-48
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:24:13-48
 activity#com.example.pawfect.ui.LoginActivity
-ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:27:9-37:20
+ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:27:9-37:20
 	android:screenOrientation
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:30:13-49
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:30:13-49
 	android:exported
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:29:13-36
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:29:13-36
 	android:theme
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:31:13-47
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:31:13-47
 	android:name
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:28:13-45
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:28:13-45
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:32:13-36:29
+ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:32:13-36:29
 action#android.intent.action.MAIN
-ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:33:17-69
+ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:33:17-69
 	android:name
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:33:25-66
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:33:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:35:17-77
+ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:35:17-77
 	android:name
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:35:27-74
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:35:27-74
 activity#com.example.pawfect.ui.MainActivity
-ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:38:9-41:51
+ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:38:9-41:51
 	android:screenOrientation
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:41:13-49
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:41:13-49
 	android:exported
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:40:13-37
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:40:13-37
 	android:name
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml:39:13-44
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:39:13-44
 uses-sdk
-INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml
-INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml
+INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml
+INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:8.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/c82f6a36e6fd22dcac9362c818107846/transformed/viewbinding-8.0.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:viewbinding:8.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/c82f6a36e6fd22dcac9362c818107846/transformed/viewbinding-8.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-ktx:22.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/28d60b05470ec5f4e504f6ca537a0a02/transformed/firebase-auth-ktx-22.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-ktx:22.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/28d60b05470ec5f4e504f6ca537a0a02/transformed/firebase-auth-ktx-22.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-firestore-ktx:24.6.0] /Users/jpicazoc/.gradle/caches/transforms-3/175393c88ba736b3b594ac0508b55d24/transformed/firebase-firestore-ktx-24.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-firestore-ktx:24.6.0] /Users/jpicazoc/.gradle/caches/transforms-3/175393c88ba736b3b594ac0508b55d24/transformed/firebase-firestore-ktx-24.6.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.2.2] /Users/jpicazoc/.gradle/caches/transforms-3/fb2e4c872853a50edc778682b41df511/transformed/firebase-analytics-ktx-21.2.2/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.2.2] /Users/jpicazoc/.gradle/caches/transforms-3/fb2e4c872853a50edc778682b41df511/transformed/firebase-analytics-ktx-21.2.2/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-common-ktx:20.3.2] /Users/jpicazoc/.gradle/caches/transforms-3/9a54bf7473b42cd89be49120e83dd5b6/transformed/firebase-common-ktx-20.3.2/AndroidManifest.xml:5:5-7:41
@@ -311,8 +329,12 @@ MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] /Users/jpica
 MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] /Users/jpicazoc/.gradle/caches/transforms-3/f8ed700884f13e0535caa9025eeefed0/transformed/play-services-auth-base-18.0.4/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-fido:20.0.1] /Users/jpicazoc/.gradle/caches/transforms-3/6136718e73960f2ea756426bf2c4948d/transformed/play-services-fido-20.0.1/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-fido:20.0.1] /Users/jpicazoc/.gradle/caches/transforms-3/6136718e73960f2ea756426bf2c4948d/transformed/play-services-fido-20.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-firestore:24.6.0] /Users/jpicazoc/.gradle/caches/transforms-3/9037fdc7afd92e85dbba1a929f21b348/transformed/firebase-firestore-24.6.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-firestore:24.6.0] /Users/jpicazoc/.gradle/caches/transforms-3/9037fdc7afd92e85dbba1a929f21b348/transformed/firebase-firestore-24.6.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/484ebe90a111f8430b09093c9b28812e/transformed/firebase-appcheck-interop-17.0.0/AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/484ebe90a111f8430b09093c9b28812e/transformed/firebase-appcheck-interop-17.0.0/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/jpicazoc/.gradle/caches/transforms-3/8c2ae73a0326a3f279980e8f9b2981aa/transformed/firebase-database-collection-18.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/jpicazoc/.gradle/caches/transforms-3/8c2ae73a0326a3f279980e8f9b2981aa/transformed/firebase-database-collection-18.0.1/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/jpicazoc/.gradle/caches/transforms-3/e1567fc10e45fc3b0d691c668af048a4/transformed/play-services-base-18.0.1/AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/jpicazoc/.gradle/caches/transforms-3/e1567fc10e45fc3b0d691c668af048a4/transformed/play-services-base-18.0.1/AndroidManifest.xml:18:5-43
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/24f3e5f33ef74946c4c33b32e6571afa/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
@@ -401,10 +423,12 @@ MERGED from [androidx.navigation:navigation-common-ktx:2.3.5] /Users/jpicazoc/.g
 MERGED from [androidx.navigation:navigation-common-ktx:2.3.5] /Users/jpicazoc/.gradle/caches/transforms-3/a896955f69ea6cbe4e30db8324db7b9c/transformed/navigation-common-ktx-2.3.5/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-common:2.3.5] /Users/jpicazoc/.gradle/caches/transforms-3/13ebadbd33ca39a657d6beb5a0629a52/transformed/navigation-common-2.3.5/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-common:2.3.5] /Users/jpicazoc/.gradle/caches/transforms-3/13ebadbd33ca39a657d6beb5a0629a52/transformed/navigation-common-2.3.5/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.9.0] /Users/jpicazoc/.gradle/caches/transforms-3/85e83e612d366542311a95aa22b4d01a/transformed/core-1.9.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.9.0] /Users/jpicazoc/.gradle/caches/transforms-3/85e83e612d366542311a95aa22b4d01a/transformed/core-1.9.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core-ktx:1.9.0] /Users/jpicazoc/.gradle/caches/transforms-3/1441b7c17e90412781ec8bfcfc9fb82c/transformed/core-ktx-1.9.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core-ktx:1.9.0] /Users/jpicazoc/.gradle/caches/transforms-3/1441b7c17e90412781ec8bfcfc9fb82c/transformed/core-ktx-1.9.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core:1.10.0] /Users/jpicazoc/.gradle/caches/transforms-3/db85a864bbaa1e6d72a85f8440054db1/transformed/core-1.10.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.10.0] /Users/jpicazoc/.gradle/caches/transforms-3/db85a864bbaa1e6d72a85f8440054db1/transformed/core-1.10.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.10.0] /Users/jpicazoc/.gradle/caches/transforms-3/2d884c1a75e9733806b79a3dfb7e0b22/transformed/core-ktx-1.10.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.10.0] /Users/jpicazoc/.gradle/caches/transforms-3/2d884c1a75e9733806b79a3dfb7e0b22/transformed/core-ktx-1.10.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-splashscreen:1.0.1] /Users/jpicazoc/.gradle/caches/transforms-3/6bf1ee89d2353f9eb3905e46d9f32eb0/transformed/core-splashscreen-1.0.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-splashscreen:1.0.1] /Users/jpicazoc/.gradle/caches/transforms-3/6bf1ee89d2353f9eb3905e46d9f32eb0/transformed/core-splashscreen-1.0.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/3d9d75ef1b9dcc329e6f6a328ece5729/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/3d9d75ef1b9dcc329e6f6a328ece5729/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/jpicazoc/.gradle/caches/transforms-3/028230f0bfdb2fe8cde9b42200ffb96e/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:21:5-23:41
@@ -421,6 +445,8 @@ MERGED from [com.google.firebase:firebase-components:17.1.0] /Users/jpicazoc/.gr
 MERGED from [com.google.firebase:firebase-components:17.1.0] /Users/jpicazoc/.gradle/caches/transforms-3/ba0ce8b40e710f2939c6424027b672be/transformed/firebase-components-17.1.0/AndroidManifest.xml:18:5-20:41
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/1bb8a7ca8f150c0e034c5479a3ad9043/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/1bb8a7ca8f150c0e034c5479a3ad9043/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/1988c516254e301da8b780502fa0834b/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/1988c516254e301da8b780502fa0834b/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/jpicazoc/.gradle/caches/transforms-3/a2c01acb5d84249abc94d5eebd6abf66/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/jpicazoc/.gradle/caches/transforms-3/a2c01acb5d84249abc94d5eebd6abf66/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/jpicazoc/.gradle/caches/transforms-3/408b1e1bb9007f39b21eed12544635d3/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
@@ -433,8 +459,6 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /Users/jpicazoc/.
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /Users/jpicazoc/.gradle/caches/transforms-3/c83fb9ceaeb9d4d0966747c25df10da4/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/jpicazoc/.gradle/caches/transforms-3/e2bce3ffbb41ab8adca0d05a93014a0e/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/jpicazoc/.gradle/caches/transforms-3/e2bce3ffbb41ab8adca0d05a93014a0e/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/1988c516254e301da8b780502fa0834b/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/1988c516254e301da8b780502fa0834b/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/e43001e428b9f2bfdf0d6a68489b110f/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/e43001e428b9f2bfdf0d6a68489b110f/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/5439d4161990756b770487415ea963c5/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
@@ -443,26 +467,34 @@ MERGED from [com.google.android.flexbox:flexbox:3.0.0] /Users/jpicazoc/.gradle/c
 MERGED from [com.google.android.flexbox:flexbox:3.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/21e3d23056551a66353abb1818488c1a/transformed/flexbox-3.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/jpicazoc/.gradle/caches/transforms-3/1b18357500a1c8d219556b3fb65efb1c/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/jpicazoc/.gradle/caches/transforms-3/1b18357500a1c8d219556b3fb65efb1c/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
-INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml
-INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml
+MERGED from [io.grpc:grpc-android:1.52.1] /Users/jpicazoc/.gradle/caches/transforms-3/51f4499e0f50e981f3662e623ffdbca8/transformed/grpc-android-1.52.1/AndroidManifest.xml:5:5-7:41
+MERGED from [io.grpc:grpc-android:1.52.1] /Users/jpicazoc/.gradle/caches/transforms-3/51f4499e0f50e981f3662e623ffdbca8/transformed/grpc-android-1.52.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/7b09ff6e14b8684216bacfdffbb0064f/transformed/protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/7b09ff6e14b8684216bacfdffbb0064f/transformed/protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
+INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml
+INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
 		ADDED from [com.google.firebase:firebase-auth:22.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/cbc1517a8ddcc0073f3f87ae7561e316/transformed/firebase-auth-22.0.0/AndroidManifest.xml:23:9-61
 	android:targetSdkVersion
-		INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/pawfect/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-auth-ktx:22.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/28d60b05470ec5f4e504f6ca537a0a02/transformed/firebase-auth-ktx-22.0.0/AndroidManifest.xml:8:9-14:19
+MERGED from [com.google.firebase:firebase-firestore-ktx:24.6.0] /Users/jpicazoc/.gradle/caches/transforms-3/175393c88ba736b3b594ac0508b55d24/transformed/firebase-firestore-ktx-24.6.0/AndroidManifest.xml:11:9-17:19
+MERGED from [com.google.firebase:firebase-firestore-ktx:24.6.0] /Users/jpicazoc/.gradle/caches/transforms-3/175393c88ba736b3b594ac0508b55d24/transformed/firebase-firestore-ktx-24.6.0/AndroidManifest.xml:11:9-17:19
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.2.2] /Users/jpicazoc/.gradle/caches/transforms-3/fb2e4c872853a50edc778682b41df511/transformed/firebase-analytics-ktx-21.2.2/AndroidManifest.xml:8:9-14:19
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.2.2] /Users/jpicazoc/.gradle/caches/transforms-3/fb2e4c872853a50edc778682b41df511/transformed/firebase-analytics-ktx-21.2.2/AndroidManifest.xml:8:9-14:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.3.2] /Users/jpicazoc/.gradle/caches/transforms-3/9a54bf7473b42cd89be49120e83dd5b6/transformed/firebase-common-ktx-20.3.2/AndroidManifest.xml:11:9-17:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.3.2] /Users/jpicazoc/.gradle/caches/transforms-3/9a54bf7473b42cd89be49120e83dd5b6/transformed/firebase-common-ktx-20.3.2/AndroidManifest.xml:11:9-17:19
 MERGED from [com.google.firebase:firebase-auth:22.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/cbc1517a8ddcc0073f3f87ae7561e316/transformed/firebase-auth-22.0.0/AndroidManifest.xml:66:9-72:19
 MERGED from [com.google.firebase:firebase-auth:22.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/cbc1517a8ddcc0073f3f87ae7561e316/transformed/firebase-auth-22.0.0/AndroidManifest.xml:66:9-72:19
+MERGED from [com.google.firebase:firebase-firestore:24.6.0] /Users/jpicazoc/.gradle/caches/transforms-3/9037fdc7afd92e85dbba1a929f21b348/transformed/firebase-firestore-24.6.0/AndroidManifest.xml:16:9-22:19
+MERGED from [com.google.firebase:firebase-firestore:24.6.0] /Users/jpicazoc/.gradle/caches/transforms-3/9037fdc7afd92e85dbba1a929f21b348/transformed/firebase-firestore-24.6.0/AndroidManifest.xml:16:9-22:19
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.2] /Users/jpicazoc/.gradle/caches/transforms-3/d54ff24ea2bd6bad07f8551889972a85/transformed/play-services-measurement-api-21.2.2/AndroidManifest.xml:28:9-34:19
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.2] /Users/jpicazoc/.gradle/caches/transforms-3/d54ff24ea2bd6bad07f8551889972a85/transformed/play-services-measurement-api-21.2.2/AndroidManifest.xml:28:9-34:19
 MERGED from [com.google.firebase:firebase-installations:17.1.3] /Users/jpicazoc/.gradle/caches/transforms-3/00e6fa1e519e73303aaafc357e94c60f/transformed/firebase-installations-17.1.3/AndroidManifest.xml:14:9-20:19
@@ -483,6 +515,12 @@ ADDED from [com.google.firebase:firebase-auth-ktx:22.0.0] /Users/jpicazoc/.gradl
 		ADDED from [com.google.firebase:firebase-auth-ktx:22.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/28d60b05470ec5f4e504f6ca537a0a02/transformed/firebase-auth-ktx-22.0.0/AndroidManifest.xml:13:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-auth-ktx:22.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/28d60b05470ec5f4e504f6ca537a0a02/transformed/firebase-auth-ktx-22.0.0/AndroidManifest.xml:12:17-116
+meta-data#com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreKtxRegistrar
+ADDED from [com.google.firebase:firebase-firestore-ktx:24.6.0] /Users/jpicazoc/.gradle/caches/transforms-3/175393c88ba736b3b594ac0508b55d24/transformed/firebase-firestore-ktx-24.6.0/AndroidManifest.xml:14:13-16:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore-ktx:24.6.0] /Users/jpicazoc/.gradle/caches/transforms-3/175393c88ba736b3b594ac0508b55d24/transformed/firebase-firestore-ktx-24.6.0/AndroidManifest.xml:16:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore-ktx:24.6.0] /Users/jpicazoc/.gradle/caches/transforms-3/175393c88ba736b3b594ac0508b55d24/transformed/firebase-firestore-ktx-24.6.0/AndroidManifest.xml:15:17-126
 meta-data#com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar
 ADDED from [com.google.firebase:firebase-analytics-ktx:21.2.2] /Users/jpicazoc/.gradle/caches/transforms-3/fb2e4c872853a50edc778682b41df511/transformed/firebase-analytics-ktx-21.2.2/AndroidManifest.xml:11:13-13:85
 	android:value
@@ -569,6 +607,12 @@ ADDED from [com.google.android.gms:play-services-auth:20.5.0] /Users/jpicazoc/.g
 		ADDED from [com.google.android.gms:play-services-auth:20.5.0] /Users/jpicazoc/.gradle/caches/transforms-3/bf8eca1cf824c1858469681eaebfdda0/transformed/play-services-auth-20.5.0/AndroidManifest.xml:36:13-107
 	android:name
 		ADDED from [com.google.android.gms:play-services-auth:20.5.0] /Users/jpicazoc/.gradle/caches/transforms-3/bf8eca1cf824c1858469681eaebfdda0/transformed/play-services-auth-20.5.0/AndroidManifest.xml:34:13-89
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:24.6.0] /Users/jpicazoc/.gradle/caches/transforms-3/9037fdc7afd92e85dbba1a929f21b348/transformed/firebase-firestore-24.6.0/AndroidManifest.xml:19:13-21:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:24.6.0] /Users/jpicazoc/.gradle/caches/transforms-3/9037fdc7afd92e85dbba1a929f21b348/transformed/firebase-firestore-24.6.0/AndroidManifest.xml:21:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:24.6.0] /Users/jpicazoc/.gradle/caches/transforms-3/9037fdc7afd92e85dbba1a929f21b348/transformed/firebase-firestore-24.6.0/AndroidManifest.xml:20:17-111
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/jpicazoc/.gradle/caches/transforms-3/e1567fc10e45fc3b0d691c668af048a4/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
 	android:exported
@@ -680,25 +724,25 @@ ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/jpicazoc/.gradle/caches/transfo
 	android:name
 		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/jpicazoc/.gradle/caches/transforms-3/dae917e5bd4d784b49b92758b17f6192/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
 permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.9.0] /Users/jpicazoc/.gradle/caches/transforms-3/85e83e612d366542311a95aa22b4d01a/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+ADDED from [androidx.core:core:1.10.0] /Users/jpicazoc/.gradle/caches/transforms-3/db85a864bbaa1e6d72a85f8440054db1/transformed/core-1.10.0/AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
-		ADDED from [androidx.core:core:1.9.0] /Users/jpicazoc/.gradle/caches/transforms-3/85e83e612d366542311a95aa22b4d01a/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+		ADDED from [androidx.core:core:1.10.0] /Users/jpicazoc/.gradle/caches/transforms-3/db85a864bbaa1e6d72a85f8440054db1/transformed/core-1.10.0/AndroidManifest.xml:24:9-44
 	android:name
-		ADDED from [androidx.core:core:1.9.0] /Users/jpicazoc/.gradle/caches/transforms-3/85e83e612d366542311a95aa22b4d01a/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+		ADDED from [androidx.core:core:1.10.0] /Users/jpicazoc/.gradle/caches/transforms-3/db85a864bbaa1e6d72a85f8440054db1/transformed/core-1.10.0/AndroidManifest.xml:23:9-81
 permission#com.example.pawfect.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.9.0] /Users/jpicazoc/.gradle/caches/transforms-3/85e83e612d366542311a95aa22b4d01a/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+ADDED from [androidx.core:core:1.10.0] /Users/jpicazoc/.gradle/caches/transforms-3/db85a864bbaa1e6d72a85f8440054db1/transformed/core-1.10.0/AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
-		ADDED from [androidx.core:core:1.9.0] /Users/jpicazoc/.gradle/caches/transforms-3/85e83e612d366542311a95aa22b4d01a/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+		ADDED from [androidx.core:core:1.10.0] /Users/jpicazoc/.gradle/caches/transforms-3/db85a864bbaa1e6d72a85f8440054db1/transformed/core-1.10.0/AndroidManifest.xml:24:9-44
 	android:name
-		ADDED from [androidx.core:core:1.9.0] /Users/jpicazoc/.gradle/caches/transforms-3/85e83e612d366542311a95aa22b4d01a/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+		ADDED from [androidx.core:core:1.10.0] /Users/jpicazoc/.gradle/caches/transforms-3/db85a864bbaa1e6d72a85f8440054db1/transformed/core-1.10.0/AndroidManifest.xml:23:9-81
 uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.9.0] /Users/jpicazoc/.gradle/caches/transforms-3/85e83e612d366542311a95aa22b4d01a/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+ADDED from [androidx.core:core:1.10.0] /Users/jpicazoc/.gradle/caches/transforms-3/db85a864bbaa1e6d72a85f8440054db1/transformed/core-1.10.0/AndroidManifest.xml:26:5-97
 	android:name
-		ADDED from [androidx.core:core:1.9.0] /Users/jpicazoc/.gradle/caches/transforms-3/85e83e612d366542311a95aa22b4d01a/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+		ADDED from [androidx.core:core:1.10.0] /Users/jpicazoc/.gradle/caches/transforms-3/db85a864bbaa1e6d72a85f8440054db1/transformed/core-1.10.0/AndroidManifest.xml:26:22-94
 uses-permission#com.example.pawfect.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.9.0] /Users/jpicazoc/.gradle/caches/transforms-3/85e83e612d366542311a95aa22b4d01a/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+ADDED from [androidx.core:core:1.10.0] /Users/jpicazoc/.gradle/caches/transforms-3/db85a864bbaa1e6d72a85f8440054db1/transformed/core-1.10.0/AndroidManifest.xml:26:5-97
 	android:name
-		ADDED from [androidx.core:core:1.9.0] /Users/jpicazoc/.gradle/caches/transforms-3/85e83e612d366542311a95aa22b4d01a/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+		ADDED from [androidx.core:core:1.10.0] /Users/jpicazoc/.gradle/caches/transforms-3/db85a864bbaa1e6d72a85f8440054db1/transformed/core-1.10.0/AndroidManifest.xml:26:22-94
 meta-data#androidx.lifecycle.ProcessLifecycleInitializer
 ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/jpicazoc/.gradle/caches/transforms-3/028230f0bfdb2fe8cde9b42200ffb96e/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
 	android:value
