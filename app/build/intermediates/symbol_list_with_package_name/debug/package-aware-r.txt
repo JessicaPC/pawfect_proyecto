@@ -2683,6 +2683,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable pawfect_logo
 drawable person_logo
+drawable phone_icon
 drawable publication_ic60
 drawable splash
 drawable splash_img
@@ -2881,7 +2882,9 @@ id easeOut
 id east
 id edit_confirm_password
 id edit_email
+id edit_name
 id edit_password
+id edit_phone
 id edit_query
 id elastic
 id email_sent_animation
@@ -2941,7 +2944,9 @@ id included
 id info
 id input_confirm_password
 id input_email
+id input_name
 id input_password
+id input_phone
 id invisible
 id inward
 id italic

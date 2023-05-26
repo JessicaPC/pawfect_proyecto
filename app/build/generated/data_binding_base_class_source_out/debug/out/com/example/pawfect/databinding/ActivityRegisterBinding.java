@@ -30,7 +30,13 @@ public final class ActivityRegisterBinding implements ViewBinding {
   public final TextInputEditText editEmail;
 
   @NonNull
+  public final TextInputEditText editName;
+
+  @NonNull
   public final TextInputEditText editPassword;
+
+  @NonNull
+  public final TextInputEditText editPhone;
 
   @NonNull
   public final Button googleButton;
@@ -42,7 +48,13 @@ public final class ActivityRegisterBinding implements ViewBinding {
   public final TextInputLayout inputEmail;
 
   @NonNull
+  public final TextInputLayout inputName;
+
+  @NonNull
   public final TextInputLayout inputPassword;
+
+  @NonNull
+  public final TextInputLayout inputPhone;
 
   @NonNull
   public final LottieAnimationView registerAnimation;
@@ -55,18 +67,24 @@ public final class ActivityRegisterBinding implements ViewBinding {
 
   private ActivityRegisterBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextInputEditText editConfirmPassword, @NonNull TextInputEditText editEmail,
-      @NonNull TextInputEditText editPassword, @NonNull Button googleButton,
+      @NonNull TextInputEditText editName, @NonNull TextInputEditText editPassword,
+      @NonNull TextInputEditText editPhone, @NonNull Button googleButton,
       @NonNull TextInputLayout inputConfirmPassword, @NonNull TextInputLayout inputEmail,
-      @NonNull TextInputLayout inputPassword, @NonNull LottieAnimationView registerAnimation,
+      @NonNull TextInputLayout inputName, @NonNull TextInputLayout inputPassword,
+      @NonNull TextInputLayout inputPhone, @NonNull LottieAnimationView registerAnimation,
       @NonNull Button registerButton, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.editConfirmPassword = editConfirmPassword;
     this.editEmail = editEmail;
+    this.editName = editName;
     this.editPassword = editPassword;
+    this.editPhone = editPhone;
     this.googleButton = googleButton;
     this.inputConfirmPassword = inputConfirmPassword;
     this.inputEmail = inputEmail;
+    this.inputName = inputName;
     this.inputPassword = inputPassword;
+    this.inputPhone = inputPhone;
     this.registerAnimation = registerAnimation;
     this.registerButton = registerButton;
     this.toolbar = toolbar;
@@ -111,9 +129,21 @@ public final class ActivityRegisterBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.edit_name;
+      TextInputEditText editName = ViewBindings.findChildViewById(rootView, id);
+      if (editName == null) {
+        break missingId;
+      }
+
       id = R.id.edit_password;
       TextInputEditText editPassword = ViewBindings.findChildViewById(rootView, id);
       if (editPassword == null) {
+        break missingId;
+      }
+
+      id = R.id.edit_phone;
+      TextInputEditText editPhone = ViewBindings.findChildViewById(rootView, id);
+      if (editPhone == null) {
         break missingId;
       }
 
@@ -135,9 +165,21 @@ public final class ActivityRegisterBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.input_name;
+      TextInputLayout inputName = ViewBindings.findChildViewById(rootView, id);
+      if (inputName == null) {
+        break missingId;
+      }
+
       id = R.id.input_password;
       TextInputLayout inputPassword = ViewBindings.findChildViewById(rootView, id);
       if (inputPassword == null) {
+        break missingId;
+      }
+
+      id = R.id.input_phone;
+      TextInputLayout inputPhone = ViewBindings.findChildViewById(rootView, id);
+      if (inputPhone == null) {
         break missingId;
       }
 
@@ -160,8 +202,9 @@ public final class ActivityRegisterBinding implements ViewBinding {
       }
 
       return new ActivityRegisterBinding((ConstraintLayout) rootView, editConfirmPassword,
-          editEmail, editPassword, googleButton, inputConfirmPassword, inputEmail, inputPassword,
-          registerAnimation, registerButton, toolbar);
+          editEmail, editName, editPassword, editPhone, googleButton, inputConfirmPassword,
+          inputEmail, inputName, inputPassword, inputPhone, registerAnimation, registerButton,
+          toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

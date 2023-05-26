@@ -17,12 +17,15 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 
 class RegisterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterBinding
     private val auth : FirebaseAuth = FirebaseAuth.getInstance()
+    private val db = FirebaseFirestore.getInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         binding = ActivityRegisterBinding.inflate(layoutInflater, null, false)
         setContentView(binding.root)
@@ -33,6 +36,8 @@ class RegisterActivity : AppCompatActivity() {
 
     private fun initListeners() {
         clickOnRegisterButton()
+        checkNameError()
+        checkPhoneError()
         checkEmailError()
         checkPasswordError()
         checkConfirmPasswordError()
@@ -42,7 +47,7 @@ class RegisterActivity : AppCompatActivity() {
     }
     private fun clickOnRegisterButton(){
         binding.registerButton.setOnClickListener {
-            if (checkEmail() && checkPassword() && checkConfirmPassword()) {
+            if (correctRegisterUserData()) {
                 if (Utils.isNetworkAvailable(this)) {
                     auth.createUserWithEmailAndPassword(
                         binding.editEmail.text.toString(),
@@ -60,6 +65,14 @@ class RegisterActivity : AppCompatActivity() {
                 }
             }
         }
+    }
+
+
+    private fun correctRegisterUserData():Boolean{
+        if (checkName() && checkPhone() && checkEmail() && checkPassword() && checkConfirmPassword()){
+            return true
+        }
+        return false
     }
 
     private fun clickOnGoogleButton(){
@@ -91,6 +104,63 @@ class RegisterActivity : AppCompatActivity() {
             finish()
         }
     }
+
+    private fun checkNameError() {
+        binding.editName.addTextChangedListener(object : TextWatcher {
+            override fun afterTextChanged(s: Editable?) {
+            }
+
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                binding.inputName.error = null
+            }
+        })
+    }
+
+    private fun checkName(): Boolean {
+        if (binding.editName.text.isNullOrEmpty()) {
+            binding.inputName.error = "Este campo no puede quedar vacio"
+        } else {
+            binding.inputName.error = null
+            return true
+        }
+
+        return false
+    }
+
+    private fun checkPhoneError() {
+        binding.editPhone.addTextChangedListener(object : TextWatcher {
+            override fun afterTextChanged(s: Editable?) {
+            }
+
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                binding.inputPhone.error = null
+            }
+        })
+    }
+
+    private fun checkPhone(): Boolean {
+        val numberPattern = "\\d+".toRegex()
+        if (binding.editPhone.text.isNullOrEmpty()) {
+            binding.inputPhone.error = "Este campo no puede quedar vacio"
+        } else if (!numberPattern.matches(binding.editPhone.text.toString())) {
+            binding.inputPhone.error = "Introduce solo numeros"
+        }else if (binding.editPhone.text.toString().length != 9) {
+            binding.inputPhone.error = "Un numero de telefono debe tener 9 caracteres"
+        }else {
+            binding.inputPhone.error = null
+            return true
+        }
+
+        return false
+    }
+
+
     private fun checkEmailError() {
         binding.editEmail.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable?) {
@@ -186,6 +256,15 @@ class RegisterActivity : AppCompatActivity() {
         builder.setPositiveButton("Cerrar", null)
         val dialog: AlertDialog = builder.create()
         dialog.show()
+    }
+
+    private fun saveUserData(){
+/*
+        db.collection("users").document(binding.editEmail.text.toString()).set(
+            "phone" to
+        )
+*/
+
     }
 
 }

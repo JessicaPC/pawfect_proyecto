@@ -24,6 +24,7 @@ drawable location_ic
 drawable logout_ic
 drawable pawfect_logo
 drawable person_logo
+drawable phone_icon
 drawable publication_ic60
 drawable splash
 drawable splash_img
@@ -34,7 +35,9 @@ id animals_recycler
 id bottom_navigation
 id edit_confirm_password
 id edit_email
+id edit_name
 id edit_password
+id edit_phone
 id email_sent_animation
 id email_title
 id fragment_container
@@ -42,7 +45,9 @@ id google_button
 id img_logo
 id input_confirm_password
 id input_email
+id input_name
 id input_password
+id input_phone
 id location_text
 id login_button
 id name_text

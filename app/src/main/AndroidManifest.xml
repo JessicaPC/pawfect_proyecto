@@ -23,7 +23,8 @@
         <activity
             android:name=".ui.RegisterActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".ui.LoginActivity"
             android:exported="true"

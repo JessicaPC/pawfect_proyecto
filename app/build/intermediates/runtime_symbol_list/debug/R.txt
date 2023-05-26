@@ -2682,6 +2682,7 @@ int drawable notification_tile_bg 0x7f0700c7
 int drawable notify_panel_notification_icon_bg 0x7f0700c8
 int drawable pawfect_logo 0x7f0700c9
 int drawable person_logo 0x7f0700ca
+int drawable phone_icon 0x7f0700d2
 int drawable publication_ic60 0x7f0700cb
 int drawable splash 0x7f0700cc
 int drawable splash_img 0x7f0700cd
@@ -2880,7 +2881,9 @@ int id easeOut 0x7f0800bb
 int id east 0x7f0800bc
 int id edit_confirm_password 0x7f0800bd
 int id edit_email 0x7f0800be
+int id edit_name 0x7f080227
 int id edit_password 0x7f0800bf
+int id edit_phone 0x7f080224
 int id edit_query 0x7f0800c0
 int id elastic 0x7f0800c1
 int id email_sent_animation 0x7f0800c2
@@ -2940,7 +2943,9 @@ int id included 0x7f0800f7
 int id info 0x7f0800f8
 int id input_confirm_password 0x7f0800f9
 int id input_email 0x7f0800fa
+int id input_name 0x7f080225
 int id input_password 0x7f0800fb
+int id input_phone 0x7f080226
 int id invisible 0x7f0800fc
 int id inward 0x7f0800fd
 int id italic 0x7f0800fe
