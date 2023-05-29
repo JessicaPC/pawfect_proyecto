@@ -4,6 +4,7 @@ package com.example.pawfect.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -22,6 +23,9 @@ import java.lang.String;
 public final class ActivityLoginBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
+
+  @NonNull
+  public final Button caca;
 
   @NonNull
   public final TextInputEditText editEmail;
@@ -50,13 +54,14 @@ public final class ActivityLoginBinding implements ViewBinding {
   @NonNull
   public final TextView txtNoAccount;
 
-  private ActivityLoginBinding(@NonNull ConstraintLayout rootView,
+  private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull Button caca,
       @NonNull TextInputEditText editEmail, @NonNull TextInputEditText editPassword,
       @NonNull ImageView imgLogo, @NonNull TextInputLayout inputEmail,
       @NonNull TextInputLayout inputPassword, @NonNull MaterialButton loginButton,
       @NonNull TextView recoverPassword, @NonNull TextView textRegister,
       @NonNull TextView txtNoAccount) {
     this.rootView = rootView;
+    this.caca = caca;
     this.editEmail = editEmail;
     this.editPassword = editPassword;
     this.imgLogo = imgLogo;
@@ -95,6 +100,12 @@ public final class ActivityLoginBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.caca;
+      Button caca = ViewBindings.findChildViewById(rootView, id);
+      if (caca == null) {
+        break missingId;
+      }
+
       id = R.id.edit_email;
       TextInputEditText editEmail = ViewBindings.findChildViewById(rootView, id);
       if (editEmail == null) {
@@ -149,8 +160,9 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityLoginBinding((ConstraintLayout) rootView, editEmail, editPassword, imgLogo,
-          inputEmail, inputPassword, loginButton, recoverPassword, textRegister, txtNoAccount);
+      return new ActivityLoginBinding((ConstraintLayout) rootView, caca, editEmail, editPassword,
+          imgLogo, inputEmail, inputPassword, loginButton, recoverPassword, textRegister,
+          txtNoAccount);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

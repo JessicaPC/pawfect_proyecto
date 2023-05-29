@@ -24,10 +24,6 @@
         "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/activity_main.xml"
     },
     {
-        "merged": "com.example.pawfect.app-mergeDebugResources-44:/layout/activity_register.xml",
-        "source": "com.example.pawfect.app-main-47:/layout/activity_register.xml"
-    },
-    {
         "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-mergeDebugResources-44:/layout/fragment_profile.xml",
         "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/fragment_profile.xml"
     },
@@ -42,5 +38,9 @@
     {
         "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-mergeDebugResources-44:/layout/fragment_favorites.xml",
         "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/fragment_favorites.xml"
+    },
+    {
+        "merged": "com.example.pawfect.app-mergeDebugResources-44:/layout/activity_login.xml",
+        "source": "com.example.pawfect.app-main-47:/layout/activity_login.xml"
     }
 ]

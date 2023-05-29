@@ -11,9 +11,11 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.pawfect.R
 import com.example.pawfect.databinding.FragmentHomeBinding
 import com.example.pawfect.model.Animal
+import com.google.firebase.firestore.FirebaseFirestore
 
 class HomeFragment : Fragment() {
     private lateinit var binding : FragmentHomeBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -48,4 +50,7 @@ class HomeFragment : Fragment() {
             Animal("Gato4", R.drawable.cat4_img)
         )
     }
+
+
+
 }

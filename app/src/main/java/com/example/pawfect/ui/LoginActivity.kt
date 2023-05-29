@@ -6,16 +6,19 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Patterns
+import android.widget.Toast
 import com.example.pawfect.R
 import com.example.pawfect.databinding.ActivityLoginBinding
 import com.example.pawfect.helpers.Utils
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.FirebaseAuthInvalidUserException
+import com.google.firebase.firestore.FirebaseFirestore
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
     private val auth: FirebaseAuth = FirebaseAuth.getInstance()
+    private val db = FirebaseFirestore.getInstance()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,11 +45,39 @@ class LoginActivity : AppCompatActivity() {
 
 
     private fun initListeners() {
+        saveButton()
         clickOnLoginButton()
         checkEmailError()
         checkPasswordError()
         clickOnRecoverPassword()
         clickOnRegister()
+    }
+
+
+    private fun saveButton(){
+
+        binding.caca.setOnClickListener {
+            val email = binding.editEmail.text.toString()
+            val password = binding.editPassword.text.toString()
+            println("Email: $email")
+            println("Password: $password")
+
+            val user = hashMapOf(
+                "email" to email,
+                "password" to password
+            )
+
+            db.collection("users")
+                .add(user)
+                .addOnSuccessListener {
+                    Toast.makeText(this, "guardado exitosamente", Toast.LENGTH_SHORT).show()
+                }
+                .addOnFailureListener { e ->
+                    Toast.makeText(this, "Error al guardar", Toast.LENGTH_SHORT).show()
+                }
+
+        }
+
     }
 
 

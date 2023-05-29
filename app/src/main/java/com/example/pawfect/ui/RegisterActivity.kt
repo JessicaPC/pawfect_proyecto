@@ -35,6 +35,7 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun initListeners() {
+
         clickOnRegisterButton()
         checkNameError()
         checkPhoneError()
@@ -45,6 +46,8 @@ class RegisterActivity : AppCompatActivity() {
         clickOnGoogleButton()
 
     }
+
+
     private fun clickOnRegisterButton(){
         binding.registerButton.setOnClickListener {
             if (correctRegisterUserData()) {
@@ -54,6 +57,7 @@ class RegisterActivity : AppCompatActivity() {
                         binding.editPassword.text.toString()
                     ).addOnCompleteListener {
                         if (it.isSuccessful) {
+                            saveUserData()
                             Toast.makeText(this, "Bienvenido/a", Toast.LENGTH_SHORT).show()
                             startActivity(Intent(this, MainActivity::class.java))
                         } else {
@@ -259,12 +263,17 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun saveUserData(){
-/*
         db.collection("users").document(binding.editEmail.text.toString()).set(
-            "phone" to
+            hashMapOf(
+                "name" to binding.editName.text.toString(),
+                "phone" to binding.editPhone.text.toString(),
+                "email" to binding.editEmail.text.toString(),
+                "password" to binding.editPassword.text.toString()
+            )
         )
-*/
 
     }
+
+
 
 }

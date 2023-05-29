@@ -2804,6 +2804,7 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id buttonPanel
+id caca
 id cache_measures
 id callMeasure
 id cancel_button

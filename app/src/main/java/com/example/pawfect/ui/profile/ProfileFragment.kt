@@ -23,6 +23,7 @@ import com.example.pawfect.ui.profile.fragments.PublicationsFragment
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 
 class ProfileFragment : Fragment() {
     private lateinit var binding : FragmentProfileBinding
@@ -30,6 +31,8 @@ class ProfileFragment : Fragment() {
     private lateinit var viewPager: ViewPager2
     private lateinit var tabLayout: TabLayout
     private lateinit var tabAdapter: FragmentPageAdapter
+    private val db = FirebaseFirestore.getInstance()
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -100,6 +103,32 @@ class ProfileFragment : Fragment() {
             requireActivity().finish()
 
     }
+
+    private fun recoverUserData() {
+        /*
+        val user = auth.currentUser
+        val userId = user?.uid
+
+        if (userId != null) {
+            val userRef = db.collection("users").document(userId)
+            userRef.get()
+                .addOnSuccessListener { documentSnapshot ->
+                    if (documentSnapshot.exists()) {
+                        val userData = documentSnapshot.toObject(Usuario::class.java)
+                        val userName = userData?.nombre
+
+                        // Establecer el nombre de usuario en el TextView
+                        binding.nameText.text = userName
+                    }
+                }
+                .addOnFailureListener { exception ->
+                    // Manejar el error de la consulta
+                }
+        }
+
+         */
+    }
+
 
 
 }
