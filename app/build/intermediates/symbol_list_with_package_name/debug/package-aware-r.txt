@@ -1321,6 +1321,7 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
+color blue
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -2687,6 +2688,7 @@ drawable phone_icon
 drawable publication_ic60
 drawable splash
 drawable splash_img
+drawable tab_indicator
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark

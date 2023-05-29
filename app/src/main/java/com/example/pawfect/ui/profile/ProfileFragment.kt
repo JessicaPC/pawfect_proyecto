@@ -16,6 +16,7 @@ import androidx.viewpager2.widget.ViewPager2
 import com.example.pawfect.R
 import com.example.pawfect.databinding.ActivityMainBinding
 import com.example.pawfect.databinding.FragmentProfileBinding
+import com.example.pawfect.model.User
 import com.example.pawfect.ui.LoginActivity
 import com.example.pawfect.ui.profile.adapter.FragmentPageAdapter
 import com.example.pawfect.ui.profile.fragments.AdoptionsFragment
@@ -48,6 +49,8 @@ class ProfileFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentProfileBinding.inflate(inflater, container, false)
+
+        recoverUserData()
 
         // Inicializar ViewPager2 y TabLayout
         viewPager = binding.viewpager
@@ -104,30 +107,37 @@ class ProfileFragment : Fragment() {
 
     }
 
+
+
     private fun recoverUserData() {
-        /*
+        recoverUserName()
+    }
+
+    private fun recoverUserName(){
         val user = auth.currentUser
-        val userId = user?.uid
+        val userEmail = user?.email
 
-        if (userId != null) {
-            val userRef = db.collection("users").document(userId)
-            userRef.get()
-                .addOnSuccessListener { documentSnapshot ->
-                    if (documentSnapshot.exists()) {
-                        val userData = documentSnapshot.toObject(Usuario::class.java)
-                        val userName = userData?.nombre
-
-                        // Establecer el nombre de usuario en el TextView
-                        binding.nameText.text = userName
+        if (userEmail != null) {
+            db.collection("users")
+                .whereEqualTo("email", userEmail)
+                .get()
+                .addOnCompleteListener { task ->
+                    if (task.isSuccessful) {
+                        val documents = task.result?.documents
+                        if (!documents.isNullOrEmpty()) {
+                            val document = documents[0]
+                            val userName = document.getString("name")
+                            // Establecer el nombre de usuario en el TextView
+                            binding.nameText.text = userName
+                        }
+                    } else {
+                        // Manejar el error de la consulta
                     }
-                }
-                .addOnFailureListener { exception ->
-                    // Manejar el error de la consulta
                 }
         }
 
-         */
     }
+
 
 
 

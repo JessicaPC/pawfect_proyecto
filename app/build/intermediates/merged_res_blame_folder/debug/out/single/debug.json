@@ -28,6 +28,10 @@
         "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/fragment_publications.xml"
     },
     {
+        "merged": "com.example.pawfect.app-merged_res-45:/drawable_tab_indicator.xml.flat",
+        "source": "com.example.pawfect.app-main-47:/drawable/tab_indicator.xml"
+    },
+    {
         "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-merged_res-45:/drawable_dog3_img.jpeg.flat",
         "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/drawable/dog3_img.jpeg"
     },
@@ -62,10 +66,6 @@
     {
         "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-merged_res-45:/menu_settings_menu.xml.flat",
         "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/menu/settings_menu.xml"
-    },
-    {
-        "merged": "com.example.pawfect.app-merged_res-45:/layout_activity_login.xml.flat",
-        "source": "com.example.pawfect.app-main-47:/layout/activity_login.xml"
     },
     {
         "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-merged_res-45:/layout_fragment_favorites.xml.flat",
@@ -174,6 +174,10 @@
     {
         "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-merged_res-45:/drawable_dog4_img.jpeg.flat",
         "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/drawable/dog4_img.jpeg"
+    },
+    {
+        "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-merged_res-45:/drawable_tab_indicator.xml.flat",
+        "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/drawable/tab_indicator.xml"
     },
     {
         "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-merged_res-45:/layout_activity_login.xml.flat",

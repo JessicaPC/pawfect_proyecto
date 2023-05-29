@@ -49,6 +49,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics-ktx'
     // Lottie animation
     implementation("com.airbnb.android:lottie:6.0.0")
+    // Bottom Nav Library
     implementation 'nl.joery.animatedbottombar:library:1.1.0'
     // Splash
     implementation 'androidx.core:core-splashscreen:1.0.1'

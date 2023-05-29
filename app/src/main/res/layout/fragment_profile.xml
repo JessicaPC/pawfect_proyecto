@@ -14,8 +14,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:title="Nombre Usuario"
-        app:menu="@menu/settings_menu"/>
+        app:title="Mi Perfil"
+        app:menu="@menu/settings_menu"
+        android:background="@color/orange"
+        app:titleTextColor="@color/white"/>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/profile_img"
@@ -63,10 +65,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/location_text"
-        app:tabIndicatorHeight="6dp"
-        app:tabIndicatorColor="#F79B70"
+        app:tabIndicatorHeight="8dp"
+        app:tabIndicatorColor="@color/blue"
         android:layout_marginTop="20dp"
-
+        app:tabIndicator="@drawable/tab_indicator"
         />
 
     <androidx.viewpager2.widget.ViewPager2

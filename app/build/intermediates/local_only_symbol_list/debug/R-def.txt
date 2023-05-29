@@ -1,6 +1,7 @@
 R_DEF: Internal format may change without notice
 local
 color black
+color blue
 color orange
 color white
 drawable adoption_ic60
@@ -28,6 +29,7 @@ drawable phone_icon
 drawable publication_ic60
 drawable splash
 drawable splash_img
+drawable tab_indicator
 id adoption_button
 id animal_description
 id animal_image
