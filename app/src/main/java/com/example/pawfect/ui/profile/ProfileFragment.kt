@@ -226,39 +226,36 @@ class ProfileFragment : Fragment() {
     private fun recoverUserData(){
 
         val user = auth.currentUser
-        /*
+
         val userEmail = user?.email
-
         if (userEmail != null) {
-            db.collection("users")
-                .whereEqualTo("email", userEmail)
-                .get()
-                .addOnCompleteListener { task ->
-                    if (task.isSuccessful) {
-                        val documents = task.result?.documents
-                        if (!documents.isNullOrEmpty()) {
-                            //userDocumentRef = documents[0].reference
-                            val document = documents[0]
-                            val userName = document.getString("name")
-                            val phone = document.getString("phone")
-                            val email = document.getString("email")
+            val usersCollection = db.collection("users")
+            val query = usersCollection.whereEqualTo("email", userEmail)
 
-                            binding.nameText.text = userName
-                            binding.phoneText.text = phone
-                            binding.emailText.text = email
-
-                        }
-                    } else {
-                        Toast.makeText(requireContext(),"No se ha encontrado el nombre", Toast.LENGTH_SHORT).show()
+            query.get().addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    val documents = task.result?.documents
+                    if (!documents.isNullOrEmpty()) {
+                        val userDocument = documents[0]
+                        val name = userDocument.getString("name")
+                        val phone = userDocument.getString("phone")
+                        // Mostrar los datos en las vistas correspondientes
+                        binding.nameText.text = name
+                        binding.phoneText.text = phone
                     }
+                } else {
+                    // Manejar errores al obtener los documentos de Firestore
+                    Toast.makeText(requireContext(), "Error al obtener los datos del usuario", Toast.LENGTH_SHORT).show()
                 }
+            }
         }
 
-         */
 
         binding.nameText.text = user?.displayName
         binding.emailText.text = user?.email
         binding.phoneText.text = user?.phoneNumber
+
+
     }
 
 

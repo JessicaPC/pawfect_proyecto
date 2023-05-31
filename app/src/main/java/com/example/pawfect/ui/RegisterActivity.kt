@@ -109,7 +109,7 @@ class RegisterActivity : AppCompatActivity() {
                             if(it.isSuccessful){
                                 startActivity(Intent(this, MainActivity::class.java))
                             }else{
-                                Toast.makeText(this, "Error registro", Toast.LENGTH_SHORT).show()
+                                Toast.makeText(this,"El inicio de sesión con Google fue cancelado o ocurrió un error", Toast.LENGTH_SHORT).show()
                             }
                         }
                     
