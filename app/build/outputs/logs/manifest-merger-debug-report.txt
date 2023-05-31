@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-45:12
+ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-48:12
 MERGED from [androidx.databinding:viewbinding:8.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/c82f6a36e6fd22dcac9362c818107846/transformed/viewbinding-8.0.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-auth-ktx:22.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/28d60b05470ec5f4e504f6ca537a0a02/transformed/firebase-auth-ktx-22.0.0/AndroidManifest.xml:2:1-17:12
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.6.0] /Users/jpicazoc/.gradle/caches/transforms-3/175393c88ba736b3b594ac0508b55d24/transformed/firebase-firestore-ktx-24.6.0/AndroidManifest.xml:2:1-20:12
@@ -94,22 +94,22 @@ MERGED from [com.google.android.flexbox:flexbox:3.0.0] /Users/jpicazoc/.gradle/c
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/jpicazoc/.gradle/caches/transforms-3/1b18357500a1c8d219556b3fb65efb1c/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
 MERGED from [io.grpc:grpc-android:1.52.1] /Users/jpicazoc/.gradle/caches/transforms-3/51f4499e0f50e981f3662e623ffdbca8/transformed/grpc-android-1.52.1/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/7b09ff6e14b8684216bacfdffbb0064f/transformed/protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
-INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-45:12
+INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-48:12
 	package
 		INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-45:12
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-48:12
 		INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-45:12
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-48:12
 		INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-45:12
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:1-48:12
 		INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:2:11-69
@@ -155,8 +155,16 @@ MERGED from [io.grpc:grpc-android:1.52.1] /Users/jpicazoc/.gradle/caches/transfo
 MERGED from [io.grpc:grpc-android:1.52.1] /Users/jpicazoc/.gradle/caches/transforms-3/51f4499e0f50e981f3662e623ffdbca8/transformed/grpc-android-1.52.1/AndroidManifest.xml:9:5-79
 	android:name
 		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:6:22-76
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:7:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:8:22-78
 application
-ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:8:5-43:19
+ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:10:5-46:19
 MERGED from [com.google.firebase:firebase-auth-ktx:22.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/28d60b05470ec5f4e504f6ca537a0a02/transformed/firebase-auth-ktx-22.0.0/AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.firebase:firebase-auth-ktx:22.0.0] /Users/jpicazoc/.gradle/caches/transforms-3/28d60b05470ec5f4e504f6ca537a0a02/transformed/firebase-auth-ktx-22.0.0/AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.6.0] /Users/jpicazoc/.gradle/caches/transforms-3/175393c88ba736b3b594ac0508b55d24/transformed/firebase-firestore-ktx-24.6.0/AndroidManifest.xml:10:5-18:19
@@ -226,67 +234,73 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/jpicazoc/.gradle/cac
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.10.0] /Users/jpicazoc/.gradle/caches/transforms-3/db85a864bbaa1e6d72a85f8440054db1/transformed/core-1.10.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:15:9-35
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:17:9-35
 	android:label
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:13:9-41
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:15:9-41
 	android:fullBackupContent
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:11:9-54
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:13:9-54
 	android:roundIcon
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:14:9-54
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:16:9-54
 	tools:targetApi
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:17:9-29
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:19:9-29
 	android:icon
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:12:9-43
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:14:9-43
 	android:allowBackup
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:9:9-35
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:16:9-45
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:18:9-45
 	android:dataExtractionRules
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:10:9-65
-activity#com.example.pawfect.ui.RecoverPasswordActivity
-ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:18:9-22:15
-	android:screenOrientation
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:21:13-49
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:12:9-65
+activity#com.example.pawfect.ui.profile.EditProfileActivity
+ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:20:9-22:40
 	android:exported
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:20:13-37
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:22:13-37
 	android:name
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:19:13-55
-activity#com.example.pawfect.ui.RegisterActivity
-ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:23:9-27:15
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:21:13-59
+activity#com.example.pawfect.ui.RecoverPasswordActivity
+ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:23:9-26:52
 	android:screenOrientation
 		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:26:13-49
 	android:exported
 		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:25:13-37
 	android:name
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:24:13-48
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:24:13-55
+activity#com.example.pawfect.ui.RegisterActivity
+ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:27:9-30:52
+	android:screenOrientation
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:30:13-49
+	android:exported
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:28:13-48
 activity#com.example.pawfect.ui.LoginActivity
-ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:28:9-38:20
+ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:31:9-41:20
 	android:screenOrientation
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:31:13-49
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:34:13-49
 	android:exported
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:30:13-36
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:33:13-36
 	android:theme
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:32:13-47
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:35:13-47
 	android:name
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:29:13-45
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:32:13-45
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:33:13-37:29
+ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:36:13-40:29
 action#android.intent.action.MAIN
-ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:34:17-69
+ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:37:17-69
 	android:name
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:34:25-66
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:37:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:36:17-77
+ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:39:17-77
 	android:name
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:36:27-74
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:39:27-74
 activity#com.example.pawfect.ui.MainActivity
-ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:39:9-42:51
+ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:42:9-45:52
 	android:screenOrientation
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:42:13-49
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:45:13-49
 	android:exported
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:41:13-37
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:44:13-37
 	android:name
-		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:40:13-44
+		ADDED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml:43:13-44
 uses-sdk
 INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/src/main/AndroidManifest.xml

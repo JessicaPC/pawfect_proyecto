@@ -19,6 +19,18 @@
         android:background="@color/orange"
         app:titleTextColor="@color/white"/>
 
+    <Button
+        android:id="@+id/edit_profile_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar Perfil"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        android:textSize="10dp"
+
+        />
+
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/profile_img"
         android:layout_width="150dp"
@@ -45,10 +57,37 @@
         />
 
     <TextView
-        android:id="@+id/location_text"
+        android:id="@+id/phone_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/name_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Numero"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/email_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/phone_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="email"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/location_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/email_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:text="Ubicación"
@@ -56,7 +95,10 @@
         android:textStyle="bold"
         android:textColor="#7E7E7E"
         android:drawableStart="@drawable/location_ic"
+        android:layout_marginTop="10dp"
+
         />
+
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tablayout"
@@ -69,6 +111,7 @@
         app:tabIndicatorColor="@color/blue"
         android:layout_marginTop="20dp"
         app:tabIndicator="@drawable/tab_indicator"
+       android:layout_margin="15dp"
         />
 
     <androidx.viewpager2.widget.ViewPager2

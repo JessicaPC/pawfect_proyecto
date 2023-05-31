@@ -1,27 +1,35 @@
 [
     {
-        "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-mergeDebugResources-44:/layout/activity_register.xml",
-        "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/activity_register.xml"
-    },
-    {
         "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-mergeDebugResources-44:/layout/fragment_home.xml",
         "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/fragment_home.xml"
-    },
-    {
-        "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-mergeDebugResources-44:/layout/fragment_publications.xml",
-        "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/fragment_publications.xml"
     },
     {
         "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-mergeDebugResources-44:/layout/activity_recover_password.xml",
         "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/activity_recover_password.xml"
     },
     {
+        "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-mergeDebugResources-44:/layout/activity_main.xml",
+        "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-mergeDebugResources-44:/layout/animal_item.xml",
+        "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/animal_item.xml"
+    },
+    {
+        "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-mergeDebugResources-44:/layout/activity_register.xml",
+        "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/activity_register.xml"
+    },
+    {
+        "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-mergeDebugResources-44:/layout/fragment_publications.xml",
+        "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/fragment_publications.xml"
+    },
+    {
         "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-mergeDebugResources-44:/layout/activity_login.xml",
         "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/activity_login.xml"
     },
     {
-        "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-mergeDebugResources-44:/layout/activity_main.xml",
-        "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/activity_main.xml"
+        "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-mergeDebugResources-44:/layout/activity_edit_profile.xml",
+        "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/activity_edit_profile.xml"
     },
     {
         "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-mergeDebugResources-44:/layout/fragment_profile.xml",
@@ -32,15 +40,11 @@
         "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/fragment_adoptions.xml"
     },
     {
-        "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-mergeDebugResources-44:/layout/animal_item.xml",
-        "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/animal_item.xml"
-    },
-    {
         "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-mergeDebugResources-44:/layout/fragment_favorites.xml",
         "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/fragment_favorites.xml"
     },
     {
-        "merged": "com.example.pawfect.app-mergeDebugResources-44:/layout/fragment_profile.xml",
-        "source": "com.example.pawfect.app-main-47:/layout/fragment_profile.xml"
+        "merged": "com.example.pawfect.app-mergeDebugResources-44:/layout/activity_login.xml",
+        "source": "com.example.pawfect.app-main-47:/layout/activity_login.xml"
     }
 ]

@@ -4,7 +4,6 @@ package com.example.pawfect.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -25,13 +24,13 @@ public final class ActivityLoginBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button caca;
-
-  @NonNull
   public final TextInputEditText editEmail;
 
   @NonNull
   public final TextInputEditText editPassword;
+
+  @NonNull
+  public final MaterialButton googleButton;
 
   @NonNull
   public final ImageView imgLogo;
@@ -54,16 +53,19 @@ public final class ActivityLoginBinding implements ViewBinding {
   @NonNull
   public final TextView txtNoAccount;
 
-  private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull Button caca,
+  @NonNull
+  public final TextView txtOr;
+
+  private ActivityLoginBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextInputEditText editEmail, @NonNull TextInputEditText editPassword,
-      @NonNull ImageView imgLogo, @NonNull TextInputLayout inputEmail,
-      @NonNull TextInputLayout inputPassword, @NonNull MaterialButton loginButton,
-      @NonNull TextView recoverPassword, @NonNull TextView textRegister,
-      @NonNull TextView txtNoAccount) {
+      @NonNull MaterialButton googleButton, @NonNull ImageView imgLogo,
+      @NonNull TextInputLayout inputEmail, @NonNull TextInputLayout inputPassword,
+      @NonNull MaterialButton loginButton, @NonNull TextView recoverPassword,
+      @NonNull TextView textRegister, @NonNull TextView txtNoAccount, @NonNull TextView txtOr) {
     this.rootView = rootView;
-    this.caca = caca;
     this.editEmail = editEmail;
     this.editPassword = editPassword;
+    this.googleButton = googleButton;
     this.imgLogo = imgLogo;
     this.inputEmail = inputEmail;
     this.inputPassword = inputPassword;
@@ -71,6 +73,7 @@ public final class ActivityLoginBinding implements ViewBinding {
     this.recoverPassword = recoverPassword;
     this.textRegister = textRegister;
     this.txtNoAccount = txtNoAccount;
+    this.txtOr = txtOr;
   }
 
   @Override
@@ -100,12 +103,6 @@ public final class ActivityLoginBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.caca;
-      Button caca = ViewBindings.findChildViewById(rootView, id);
-      if (caca == null) {
-        break missingId;
-      }
-
       id = R.id.edit_email;
       TextInputEditText editEmail = ViewBindings.findChildViewById(rootView, id);
       if (editEmail == null) {
@@ -115,6 +112,12 @@ public final class ActivityLoginBinding implements ViewBinding {
       id = R.id.edit_password;
       TextInputEditText editPassword = ViewBindings.findChildViewById(rootView, id);
       if (editPassword == null) {
+        break missingId;
+      }
+
+      id = R.id.google_button;
+      MaterialButton googleButton = ViewBindings.findChildViewById(rootView, id);
+      if (googleButton == null) {
         break missingId;
       }
 
@@ -160,9 +163,15 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityLoginBinding((ConstraintLayout) rootView, caca, editEmail, editPassword,
-          imgLogo, inputEmail, inputPassword, loginButton, recoverPassword, textRegister,
-          txtNoAccount);
+      id = R.id.txt_or;
+      TextView txtOr = ViewBindings.findChildViewById(rootView, id);
+      if (txtOr == null) {
+        break missingId;
+      }
+
+      return new ActivityLoginBinding((ConstraintLayout) rootView, editEmail, editPassword,
+          googleButton, imgLogo, inputEmail, inputPassword, loginButton, recoverPassword,
+          textRegister, txtNoAccount, txtOr);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -12,17 +12,20 @@ import androidx.appcompat.app.AlertDialog
 import com.example.pawfect.R
 import com.example.pawfect.databinding.ActivityRegisterBinding
 import com.example.pawfect.helpers.Utils
+import com.example.pawfect.ui.home.HomeFragment
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.firestore.FirebaseFirestore
 
 class RegisterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterBinding
     private val auth : FirebaseAuth = FirebaseAuth.getInstance()
     private val db = FirebaseFirestore.getInstance()
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -87,12 +90,35 @@ class RegisterActivity : AppCompatActivity() {
                 .build()
 
             val googleClient: GoogleSignInClient = GoogleSignIn.getClient(this, googleConf)
-            val signInIntent = googleClient.signInIntent
 
-            googleSignInLauncher.launch(signInIntent)
+           startActivityForResult(googleClient.signInIntent,100)
         }
+
     }
 
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode==100){
+            val task = GoogleSignIn.getSignedInAccountFromIntent(data)
+            try {
+                val account = task.getResult(ApiException::class.java)
+                if (account != null){
+                    val credential = GoogleAuthProvider.getCredential(account.idToken, null)
+                    auth.signInWithCredential(credential)
+                        .addOnCompleteListener {
+                            if(it.isSuccessful){
+                                startActivity(Intent(this, MainActivity::class.java))
+                            }else{
+                                Toast.makeText(this, "Error registro", Toast.LENGTH_SHORT).show()
+                            }
+                        }
+                    
+                }
+            }catch(e:ApiException){
+                Toast.makeText(this, e.toString(), Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
     private val googleSignInLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
         if (result.resultCode == RESULT_OK) {
             // El inicio de sesión con Google fue exitoso, maneja la respuesta aquí

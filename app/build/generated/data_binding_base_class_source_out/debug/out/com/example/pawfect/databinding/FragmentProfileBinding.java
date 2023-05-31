@@ -4,6 +4,7 @@ package com.example.pawfect.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,10 +25,19 @@ public final class FragmentProfileBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final Button editProfileButton;
+
+  @NonNull
+  public final TextView emailText;
+
+  @NonNull
   public final TextView locationText;
 
   @NonNull
   public final TextView nameText;
+
+  @NonNull
+  public final TextView phoneText;
 
   @NonNull
   public final AppCompatImageView profileImg;
@@ -41,12 +51,17 @@ public final class FragmentProfileBinding implements ViewBinding {
   @NonNull
   public final ViewPager2 viewpager;
 
-  private FragmentProfileBinding(@NonNull ConstraintLayout rootView, @NonNull TextView locationText,
-      @NonNull TextView nameText, @NonNull AppCompatImageView profileImg,
-      @NonNull TabLayout tablayout, @NonNull Toolbar toolbar, @NonNull ViewPager2 viewpager) {
+  private FragmentProfileBinding(@NonNull ConstraintLayout rootView,
+      @NonNull Button editProfileButton, @NonNull TextView emailText,
+      @NonNull TextView locationText, @NonNull TextView nameText, @NonNull TextView phoneText,
+      @NonNull AppCompatImageView profileImg, @NonNull TabLayout tablayout,
+      @NonNull Toolbar toolbar, @NonNull ViewPager2 viewpager) {
     this.rootView = rootView;
+    this.editProfileButton = editProfileButton;
+    this.emailText = emailText;
     this.locationText = locationText;
     this.nameText = nameText;
+    this.phoneText = phoneText;
     this.profileImg = profileImg;
     this.tablayout = tablayout;
     this.toolbar = toolbar;
@@ -80,6 +95,18 @@ public final class FragmentProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.edit_profile_button;
+      Button editProfileButton = ViewBindings.findChildViewById(rootView, id);
+      if (editProfileButton == null) {
+        break missingId;
+      }
+
+      id = R.id.email_text;
+      TextView emailText = ViewBindings.findChildViewById(rootView, id);
+      if (emailText == null) {
+        break missingId;
+      }
+
       id = R.id.location_text;
       TextView locationText = ViewBindings.findChildViewById(rootView, id);
       if (locationText == null) {
@@ -89,6 +116,12 @@ public final class FragmentProfileBinding implements ViewBinding {
       id = R.id.name_text;
       TextView nameText = ViewBindings.findChildViewById(rootView, id);
       if (nameText == null) {
+        break missingId;
+      }
+
+      id = R.id.phone_text;
+      TextView phoneText = ViewBindings.findChildViewById(rootView, id);
+      if (phoneText == null) {
         break missingId;
       }
 
@@ -116,8 +149,8 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentProfileBinding((ConstraintLayout) rootView, locationText, nameText,
-          profileImg, tablayout, toolbar, viewpager);
+      return new FragmentProfileBinding((ConstraintLayout) rootView, editProfileButton, emailText,
+          locationText, nameText, phoneText, profileImg, tablayout, toolbar, viewpager);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -2613,6 +2613,7 @@ drawable dog2_img
 drawable dog3_img
 drawable dog4_img
 drawable dog_img
+drawable edit_profile_icon
 drawable email_logo
 drawable favorite_icon
 drawable google_logo
@@ -2806,7 +2807,6 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id buttonPanel
-id caca
 id cache_measures
 id callMeasure
 id cancel_button
@@ -2888,9 +2888,12 @@ id edit_email
 id edit_name
 id edit_password
 id edit_phone
+id edit_profile_animation
+id edit_profile_button
 id edit_query
 id elastic
 id email_sent_animation
+id email_text
 id email_title
 id end
 id endToStart
@@ -3068,6 +3071,7 @@ id pathRelative
 id peekHeight
 id pending_email_animation
 id percent
+id phone_text
 id pin
 id position
 id postLayout
@@ -3093,6 +3097,7 @@ id rounded
 id row
 id row_index_key
 id row_reverse
+id save_changes_button
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3219,6 +3224,7 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id txt_no_account
+id txt_or
 id unchecked
 id uniform
 id unlabeled
@@ -3333,6 +3339,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_edit_profile
 layout activity_login
 layout activity_main
 layout activity_recover_password
@@ -3440,6 +3447,7 @@ menu settings_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+raw edit_profile_animation
 raw firebase_common_keep
 raw pending_email
 raw register_animation

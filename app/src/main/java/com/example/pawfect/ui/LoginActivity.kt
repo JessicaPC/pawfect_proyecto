@@ -10,9 +10,14 @@ import android.widget.Toast
 import com.example.pawfect.R
 import com.example.pawfect.databinding.ActivityLoginBinding
 import com.example.pawfect.helpers.Utils
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInClient
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
+import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.FirebaseAuthInvalidUserException
+import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.firestore.FirebaseFirestore
 
 class LoginActivity : AppCompatActivity() {
@@ -37,7 +42,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun isUserLogged(){
-        if (auth.currentUser!=null){
+        if (auth.currentUser != null){
             startActivity(Intent(this,MainActivity::class.java))
             finish()
         }
@@ -45,7 +50,7 @@ class LoginActivity : AppCompatActivity() {
 
 
     private fun initListeners() {
-        saveButton()
+        clickOnGoogleButton()
         clickOnLoginButton()
         checkEmailError()
         checkPasswordError()
@@ -54,31 +59,45 @@ class LoginActivity : AppCompatActivity() {
     }
 
 
-    private fun saveButton(){
+    private fun clickOnGoogleButton(){
+        binding.googleButton.setOnClickListener {
+            val googleConf = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken(getString(R.string.default_web_client_id))
+                .requestEmail()
+                .build()
 
-        binding.caca.setOnClickListener {
-            val email = binding.editEmail.text.toString()
-            val password = binding.editPassword.text.toString()
-            println("Email: $email")
-            println("Password: $password")
+            val googleClient: GoogleSignInClient = GoogleSignIn.getClient(this, googleConf)
 
-            val user = hashMapOf(
-                "email" to email,
-                "password" to password
-            )
-
-            db.collection("users")
-                .add(user)
-                .addOnSuccessListener {
-                    Toast.makeText(this, "guardado exitosamente", Toast.LENGTH_SHORT).show()
-                }
-                .addOnFailureListener { e ->
-                    Toast.makeText(this, "Error al guardar", Toast.LENGTH_SHORT).show()
-                }
-
+            startActivityForResult(googleClient.signInIntent,100)
         }
 
     }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode==100){
+            val task = GoogleSignIn.getSignedInAccountFromIntent(data)
+            try {
+                val account = task.getResult(ApiException::class.java)
+                if (account != null){
+                    val credential = GoogleAuthProvider.getCredential(account.idToken, null)
+                    auth.signInWithCredential(credential)
+                        .addOnCompleteListener {
+                            if(it.isSuccessful){
+                                startActivity(Intent(this, MainActivity::class.java))
+                            }else{
+                                Toast.makeText(this, "Error registro", Toast.LENGTH_SHORT).show()
+                            }
+                        }
+
+                }
+            }catch(e: ApiException){
+                Toast.makeText(this, e.toString(), Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+
+
 
 
     private fun clickOnLoginButton() {

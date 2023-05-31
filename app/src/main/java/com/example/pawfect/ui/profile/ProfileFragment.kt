@@ -1,8 +1,8 @@
 package com.example.pawfect.ui.profile
 
 import android.content.Intent
-import android.graphics.Color
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.Menu
@@ -10,13 +10,11 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import androidx.viewpager2.widget.ViewPager2
 import com.example.pawfect.R
-import com.example.pawfect.databinding.ActivityMainBinding
 import com.example.pawfect.databinding.FragmentProfileBinding
-import com.example.pawfect.model.User
 import com.example.pawfect.ui.LoginActivity
 import com.example.pawfect.ui.profile.adapter.FragmentPageAdapter
 import com.example.pawfect.ui.profile.fragments.AdoptionsFragment
@@ -24,6 +22,7 @@ import com.example.pawfect.ui.profile.fragments.PublicationsFragment
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
 
 class ProfileFragment : Fragment() {
@@ -33,7 +32,7 @@ class ProfileFragment : Fragment() {
     private lateinit var tabLayout: TabLayout
     private lateinit var tabAdapter: FragmentPageAdapter
     private val db = FirebaseFirestore.getInstance()
-
+    private lateinit var userDocumentRef: DocumentReference
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,8 +48,6 @@ class ProfileFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentProfileBinding.inflate(inflater, container, false)
-
-        recoverUserData()
 
         // Inicializar ViewPager2 y TabLayout
         viewPager = binding.viewpager
@@ -76,7 +73,18 @@ class ProfileFragment : Fragment() {
 
         (requireActivity() as AppCompatActivity).setSupportActionBar(binding.toolbar)
         setHasOptionsMenu(true)
+
+        initListeners()
+
+
         return binding.root
+    }
+
+
+    private fun initListeners(){
+        recoverUserData()
+        clickOnEditUserDataButton()
+
     }
 
 
@@ -84,8 +92,6 @@ class ProfileFragment : Fragment() {
         inflater.inflate(R.menu.settings_menu, menu)
         super.onCreateOptionsMenu(menu, inflater)
     }
-
-
 
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -107,14 +113,120 @@ class ProfileFragment : Fragment() {
 
     }
 
+    private fun clickOnEditUserDataButton(){
+        binding.editProfileButton.setOnClickListener {
+            val name = binding.nameText.text.toString()
+            val email = binding.emailText.text.toString()
+            val phone = binding.phoneText.text.toString()
 
 
-    private fun recoverUserData() {
-        recoverUserName()
+            val bundle = Bundle().apply {
+                putString("name", name)
+                putString("phone", phone)
+                putString("email",email)
+            }
+
+            val intent = Intent(requireContext(),EditProfileActivity::class.java)
+            intent.putExtra("profileBundle",bundle)
+            startActivity(intent)
+        }
+        /*
+        binding.editProfileButton.setOnClickListener {
+            if (isEditMode){
+                // El perfil ya está en modo de edición, realiza la lógica de guardado de datos aquí
+                saveProfileChanges()
+
+                // Cambia al modo de visualización del perfil
+                showProfileData()
+
+            }else{
+                // El perfil está en modo de visualización, cambia al modo de edición
+                showEditProfileForm()
+            }
+        }
+
+         */
     }
 
-    private fun recoverUserName(){
+    /*
+    private fun saveProfileChanges() {
+        val name = binding.editName.text.toString()
+        val email = binding.editEmail.text.toString()
+
+        changeUserEmail(email)
+        userDocumentRef.update(
+            mapOf(
+                "name" to name,
+                "email" to email
+            )
+
+
+
+        ).addOnSuccessListener {
+            Toast.makeText(requireContext(), "Cambios guardados", Toast.LENGTH_SHORT).show()
+            showProfileData() // Cambiar al modo de visualización después de guardar los cambios
+            recoverUserData()
+        }.addOnFailureListener { e ->
+            Toast.makeText(requireContext(), "Error al guardar los cambios", Toast.LENGTH_SHORT).show()
+            Log.e("ProfileFragment", "Error al guardar los cambios", e)
+        }//   binding.inputName
+    }
+
+    private fun changeUserEmail(email:String){
+        auth.currentUser?.updateEmail(email)?.addOnCompleteListener {task ->
+            if (task.isSuccessful){
+                Toast.makeText(requireContext(),"Correo cambiado", Toast.LENGTH_SHORT).show()
+            }else{
+                Toast.makeText(requireContext(),"Se produjo un error al cambiar el correo", Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+
+    private fun showProfileData(){
+        showUserData()
+
+
+        binding.editProfileButton.text = "Editar Perfil"
+        isEditMode = false
+    }
+
+    private fun showEditProfileForm(){
+        hideUserData()
+
+        val currentName = binding.nameText.text.toString()
+        val currentEmail = binding.emailText.text.toString()
+        binding.editName.setText(currentName)
+        binding.editEmail.setText(currentEmail)
+
+        binding.editProfileButton.text = "Guardar Cambios"
+        isEditMode = true
+    }
+
+
+    private fun hideUserData(){
+        binding.nameText.visibility = View.INVISIBLE
+        binding.inputName.visibility = View.VISIBLE
+        binding.emailText.visibility = View.INVISIBLE
+        binding.inputEmail.visibility = View.VISIBLE
+        binding.locationText.visibility = View.INVISIBLE
+        binding.tablayout.visibility = View.INVISIBLE
+        binding.viewpager.visibility = View.INVISIBLE
+    }
+
+    private fun showUserData(){
+        binding.nameText.visibility = View.VISIBLE
+        binding.inputName.visibility = View.INVISIBLE
+        binding.emailText.visibility = View.VISIBLE
+        binding.inputEmail.visibility = View.INVISIBLE
+        binding.tablayout.visibility = View.VISIBLE
+        binding.viewpager.visibility = View.VISIBLE
+    }
+
+*/
+    private fun recoverUserData(){
+
         val user = auth.currentUser
+        /*
         val userEmail = user?.email
 
         if (userEmail != null) {
@@ -125,20 +237,29 @@ class ProfileFragment : Fragment() {
                     if (task.isSuccessful) {
                         val documents = task.result?.documents
                         if (!documents.isNullOrEmpty()) {
+                            //userDocumentRef = documents[0].reference
                             val document = documents[0]
                             val userName = document.getString("name")
-                            // Establecer el nombre de usuario en el TextView
+                            val phone = document.getString("phone")
+                            val email = document.getString("email")
+
                             binding.nameText.text = userName
+                            binding.phoneText.text = phone
+                            binding.emailText.text = email
+
                         }
                     } else {
-                        // Manejar el error de la consulta
+                        Toast.makeText(requireContext(),"No se ha encontrado el nombre", Toast.LENGTH_SHORT).show()
                     }
                 }
         }
 
+         */
+
+        binding.nameText.text = user?.displayName
+        binding.emailText.text = user?.email
+        binding.phoneText.text = user?.phoneNumber
     }
-
-
 
 
 }

@@ -2612,6 +2612,7 @@ int drawable dog2_img 0x7f070080
 int drawable dog3_img 0x7f070081
 int drawable dog4_img 0x7f070082
 int drawable dog_img 0x7f070083
+int drawable edit_profile_icon 0x7f0700d4
 int drawable email_logo 0x7f070084
 int drawable favorite_icon 0x7f070085
 int drawable google_logo 0x7f070086
@@ -2805,7 +2806,6 @@ int id browser_actions_menu_item_text 0x7f08006d
 int id browser_actions_menu_items 0x7f08006e
 int id browser_actions_menu_view 0x7f08006f
 int id buttonPanel 0x7f080070
-int id caca 0x7f080071
 int id cache_measures 0x7f080072
 int id callMeasure 0x7f080073
 int id cancel_button 0x7f080074
@@ -2887,9 +2887,12 @@ int id edit_email 0x7f0800bf
 int id edit_name 0x7f0800c0
 int id edit_password 0x7f0800c1
 int id edit_phone 0x7f0800c2
+int id edit_profile_animation 0x7f08022b
+int id edit_profile_button 0x7f080229
 int id edit_query 0x7f0800c3
 int id elastic 0x7f0800c4
 int id email_sent_animation 0x7f0800c5
+int id email_text 0x7f080228
 int id email_title 0x7f0800c6
 int id end 0x7f0800c7
 int id endToStart 0x7f0800c8
@@ -3067,6 +3070,7 @@ int id pathRelative 0x7f080173
 int id peekHeight 0x7f080174
 int id pending_email_animation 0x7f080175
 int id percent 0x7f080176
+int id phone_text 0x7f08022d
 int id pin 0x7f080177
 int id position 0x7f080178
 int id postLayout 0x7f080179
@@ -3092,6 +3096,7 @@ int id rounded 0x7f08018c
 int id row 0x7f08018d
 int id row_index_key 0x7f08018e
 int id row_reverse 0x7f08018f
+int id save_changes_button 0x7f08022c
 int id save_non_transition_alpha 0x7f080190
 int id save_overlay_view 0x7f080191
 int id sawtooth 0x7f080192
@@ -3218,6 +3223,7 @@ int id transition_scene_layoutid_cache 0x7f08020a
 int id transition_transform 0x7f08020b
 int id triangle 0x7f08020c
 int id txt_no_account 0x7f08020d
+int id txt_or 0x7f08022e
 int id unchecked 0x7f08020e
 int id uniform 0x7f08020f
 int id unlabeled 0x7f080210
@@ -3332,6 +3338,7 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0b0018
 int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
+int layout activity_edit_profile 0x7f0b0082
 int layout activity_login 0x7f0b001c
 int layout activity_main 0x7f0b001d
 int layout activity_recover_password 0x7f0b001e
@@ -3439,6 +3446,7 @@ int menu settings_menu 0x7f0c0001
 int mipmap ic_launcher 0x7f0d0000
 int mipmap ic_launcher_round 0x7f0d0001
 int plurals mtrl_badge_content_description 0x7f0e0000
+int raw edit_profile_animation 0x7f0f0005
 int raw firebase_common_keep 0x7f0f0000
 int raw pending_email 0x7f0f0001
 int raw register_animation 0x7f0f0002
