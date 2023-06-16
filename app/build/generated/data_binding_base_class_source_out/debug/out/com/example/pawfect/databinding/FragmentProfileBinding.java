@@ -8,14 +8,13 @@ import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import androidx.viewpager2.widget.ViewPager2;
 import com.example.pawfect.R;
-import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.imageview.ShapeableImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -40,22 +39,22 @@ public final class FragmentProfileBinding implements ViewBinding {
   public final TextView phoneText;
 
   @NonNull
-  public final AppCompatImageView profileImg;
+  public final ShapeableImageView profileImg;
 
   @NonNull
-  public final TabLayout tablayout;
+  public final RecyclerView recyclerAnimals;
+
+  @NonNull
+  public final TextView textPublications;
 
   @NonNull
   public final Toolbar toolbar;
 
-  @NonNull
-  public final ViewPager2 viewpager;
-
   private FragmentProfileBinding(@NonNull ConstraintLayout rootView,
       @NonNull Button editProfileButton, @NonNull TextView emailText,
       @NonNull TextView locationText, @NonNull TextView nameText, @NonNull TextView phoneText,
-      @NonNull AppCompatImageView profileImg, @NonNull TabLayout tablayout,
-      @NonNull Toolbar toolbar, @NonNull ViewPager2 viewpager) {
+      @NonNull ShapeableImageView profileImg, @NonNull RecyclerView recyclerAnimals,
+      @NonNull TextView textPublications, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.editProfileButton = editProfileButton;
     this.emailText = emailText;
@@ -63,9 +62,9 @@ public final class FragmentProfileBinding implements ViewBinding {
     this.nameText = nameText;
     this.phoneText = phoneText;
     this.profileImg = profileImg;
-    this.tablayout = tablayout;
+    this.recyclerAnimals = recyclerAnimals;
+    this.textPublications = textPublications;
     this.toolbar = toolbar;
-    this.viewpager = viewpager;
   }
 
   @Override
@@ -126,14 +125,20 @@ public final class FragmentProfileBinding implements ViewBinding {
       }
 
       id = R.id.profile_img;
-      AppCompatImageView profileImg = ViewBindings.findChildViewById(rootView, id);
+      ShapeableImageView profileImg = ViewBindings.findChildViewById(rootView, id);
       if (profileImg == null) {
         break missingId;
       }
 
-      id = R.id.tablayout;
-      TabLayout tablayout = ViewBindings.findChildViewById(rootView, id);
-      if (tablayout == null) {
+      id = R.id.recycler_animals;
+      RecyclerView recyclerAnimals = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerAnimals == null) {
+        break missingId;
+      }
+
+      id = R.id.text_publications;
+      TextView textPublications = ViewBindings.findChildViewById(rootView, id);
+      if (textPublications == null) {
         break missingId;
       }
 
@@ -143,14 +148,9 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.viewpager;
-      ViewPager2 viewpager = ViewBindings.findChildViewById(rootView, id);
-      if (viewpager == null) {
-        break missingId;
-      }
-
       return new FragmentProfileBinding((ConstraintLayout) rootView, editProfileButton, emailText,
-          locationText, nameText, phoneText, profileImg, tablayout, toolbar, viewpager);
+          locationText, nameText, phoneText, profileImg, recyclerAnimals, textPublications,
+          toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

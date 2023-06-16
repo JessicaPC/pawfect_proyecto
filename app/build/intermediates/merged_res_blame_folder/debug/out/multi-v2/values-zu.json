@@ -1,8 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.pawfect.app-mergeDebugResources-43:/values-zu/values-zu.xml",
+            "outputFile": "com.example.pawfect.app-mergeDebugResources-55:/values-zu/values-zu.xml",
             "map": [
+                {
+                    "source": "/Users/jpicazoc/.gradle/caches/transforms-3/3b27d1c1d9449960d28cb5caa2b8d7d2/transformed/play-services-base-18.1.0/res/values-zu/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "193,300,472,603,703,867,992,1112,1218,1374,1480,1641,1768,1922,2075,2132,2197",
+                        "endColumns": "106,171,130,99,163,124,119,105,155,105,160,126,153,152,56,64,80",
+                        "endOffsets": "299,471,602,702,866,991,1111,1217,1373,1479,1640,1767,1921,2074,2131,2196,2277"
+                    },
+                    "to": {
+                        "startLines": "44,45,46,47,48,49,50,51,53,54,55,56,57,58,59,60,61",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "4088,4199,4375,4510,4614,4782,4911,5035,5277,5437,5547,5712,5843,6001,6158,6219,6288",
+                        "endColumns": "110,175,134,103,167,128,123,109,159,109,164,130,157,156,60,68,84",
+                        "endOffsets": "4194,4370,4505,4609,4777,4906,5030,5140,5432,5542,5707,5838,5996,6153,6214,6283,6368"
+                    }
+                },
                 {
                     "source": "/Users/jpicazoc/.gradle/caches/transforms-3/db85a864bbaa1e6d72a85f8440054db1/transformed/core-1.10.0/res/values-zu/values-zu.xml",
                     "from": {
@@ -57,40 +74,6 @@
                     }
                 },
                 {
-                    "source": "/Users/jpicazoc/.gradle/caches/transforms-3/e1567fc10e45fc3b0d691c668af048a4/transformed/play-services-base-18.0.1/res/values-zu/values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "193,300,472,603,703,867,992,1112,1218,1374,1480,1641,1768,1922,2075,2132,2197",
-                        "endColumns": "106,171,130,99,163,124,119,105,155,105,160,126,153,152,56,64,80",
-                        "endOffsets": "299,471,602,702,866,991,1111,1217,1373,1479,1640,1767,1921,2074,2131,2196,2277"
-                    },
-                    "to": {
-                        "startLines": "44,45,46,47,48,49,50,51,53,54,55,56,57,58,59,60,61",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "4088,4199,4375,4510,4614,4782,4911,5035,5277,5437,5547,5712,5843,6001,6158,6219,6288",
-                        "endColumns": "110,175,134,103,167,128,123,109,159,109,164,130,157,156,60,68,84",
-                        "endOffsets": "4194,4370,4505,4609,4777,4906,5030,5140,5432,5542,5707,5838,5996,6153,6214,6283,6368"
-                    }
-                },
-                {
-                    "source": "/Users/jpicazoc/.gradle/caches/transforms-3/61f27083f6bf32d1f05c9be3b18c2059/transformed/navigation-ui-2.3.5/res/values-zu/values-zu.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,168",
-                        "endColumns": "112,120",
-                        "endOffsets": "163,284"
-                    },
-                    "to": {
-                        "startLines": "115,116",
-                        "startColumns": "4,4",
-                        "startOffsets": "10802,10915",
-                        "endColumns": "112,120",
-                        "endOffsets": "10910,11031"
-                    }
-                },
-                {
                     "source": "/Users/jpicazoc/.gradle/caches/transforms-3/2a157015179626fcff6f37db6d3875de/transformed/browser-1.4.0/res/values-zu/values-zu.xml",
                     "from": {
                         "startLines": "2,3,4,5",
@@ -105,6 +88,23 @@
                         "startOffsets": "6373,6655,6763,6875",
                         "endColumns": "111,107,111,111",
                         "endOffsets": "6480,6758,6870,6982"
+                    }
+                },
+                {
+                    "source": "/Users/jpicazoc/.gradle/caches/transforms-3/1a07fe07d2c94e0a72fe3591e32a71a3/transformed/navigation-ui-2.5.3/res/values-zu/values-zu.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,168",
+                        "endColumns": "112,120",
+                        "endOffsets": "163,284"
+                    },
+                    "to": {
+                        "startLines": "115,116",
+                        "startColumns": "4,4",
+                        "startOffsets": "10802,10915",
+                        "endColumns": "112,120",
+                        "endOffsets": "10910,11031"
                     }
                 },
                 {

@@ -1,4 +1,4 @@
-#Wed May 31 08:22:38 CEST 2023
+#Wed Jun 14 07:49:29 CEST 2023
 base.0=/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 base.10=/Users/jpicazoc/projectoJessi/pawfect_github/pawfect_proyecto/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex

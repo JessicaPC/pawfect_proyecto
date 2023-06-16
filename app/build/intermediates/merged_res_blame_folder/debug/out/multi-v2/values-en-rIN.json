@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.pawfect.app-mergeDebugResources-43:/values-en-rIN/values-en-rIN.xml",
+            "outputFile": "com.example.pawfect.app-mergeDebugResources-55:/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
                     "source": "/Users/jpicazoc/.gradle/caches/transforms-3/db85a864bbaa1e6d72a85f8440054db1/transformed/core-1.10.0/res/values-en-rIN/values-en-rIN.xml",
@@ -21,6 +21,23 @@
                     }
                 },
                 {
+                    "source": "/Users/jpicazoc/.gradle/caches/transforms-3/1a07fe07d2c94e0a72fe3591e32a71a3/transformed/navigation-ui-2.5.3/res/values-en-rIN/values-en-rIN.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,161",
+                        "endColumns": "105,116",
+                        "endOffsets": "156,273"
+                    },
+                    "to": {
+                        "startLines": "40,41",
+                        "startColumns": "4,4",
+                        "startOffsets": "3884,3990",
+                        "endColumns": "105,116",
+                        "endOffsets": "3985,4102"
+                    }
+                },
+                {
                     "source": "/Users/jpicazoc/.gradle/caches/transforms-3/2a157015179626fcff6f37db6d3875de/transformed/browser-1.4.0/res/values-en-rIN/values-en-rIN.xml",
                     "from": {
                         "startLines": "2,3,4,5",
@@ -35,23 +52,6 @@
                         "startOffsets": "3481,3579,3676,3785",
                         "endColumns": "97,96,108,98",
                         "endOffsets": "3574,3671,3780,3879"
-                    }
-                },
-                {
-                    "source": "/Users/jpicazoc/.gradle/caches/transforms-3/61f27083f6bf32d1f05c9be3b18c2059/transformed/navigation-ui-2.3.5/res/values-en-rIN/values-en-rIN.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,161",
-                        "endColumns": "105,116",
-                        "endOffsets": "156,273"
-                    },
-                    "to": {
-                        "startLines": "40,41",
-                        "startColumns": "4,4",
-                        "startOffsets": "3884,3990",
-                        "endColumns": "105,116",
-                        "endOffsets": "3985,4102"
                     }
                 },
                 {

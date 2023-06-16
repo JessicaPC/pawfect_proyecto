@@ -7,19 +7,20 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.util.Patterns
 import android.widget.Toast
-import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
 import com.example.pawfect.R
 import com.example.pawfect.databinding.ActivityRegisterBinding
 import com.example.pawfect.helpers.Utils
-import com.example.pawfect.ui.home.HomeFragment
+import com.example.pawfect.ui.main.MainActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
+import com.google.firebase.auth.AuthCredential
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.firestore.FirebaseFirestore
+
 
 class RegisterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterBinding
@@ -38,7 +39,6 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun initListeners() {
-
         clickOnRegisterButton()
         checkNameError()
         checkPhoneError()
@@ -47,7 +47,6 @@ class RegisterActivity : AppCompatActivity() {
         checkConfirmPasswordError()
         clickOnBackToolbar()
         clickOnGoogleButton()
-
     }
 
 
@@ -55,18 +54,7 @@ class RegisterActivity : AppCompatActivity() {
         binding.registerButton.setOnClickListener {
             if (correctRegisterUserData()) {
                 if (Utils.isNetworkAvailable(this)) {
-                    auth.createUserWithEmailAndPassword(
-                        binding.editEmail.text.toString(),
-                        binding.editPassword.text.toString()
-                    ).addOnCompleteListener {
-                        if (it.isSuccessful) {
-                            saveUserData()
-                            Toast.makeText(this, "Bienvenido/a", Toast.LENGTH_SHORT).show()
-                            startActivity(Intent(this, MainActivity::class.java))
-                        } else {
-                            showAlert()
-                        }
-                    }
+                    createUser()
                 }else{
                     Utils.showAlert("Error", "Revisa tu conexion a Internet", this)
                 }
@@ -74,6 +62,21 @@ class RegisterActivity : AppCompatActivity() {
         }
     }
 
+    private fun createUser(){
+        auth.createUserWithEmailAndPassword(
+            binding.editEmail.text.toString(),
+            binding.editPassword.text.toString()
+        ).addOnCompleteListener {
+            if (it.isSuccessful) {
+                saveUserData()
+                Toast.makeText(this, "Bienvenido/a", Toast.LENGTH_SHORT).show()
+                startActivity(Intent(this, MainActivity::class.java))
+                finish()
+            } else {
+                showAlert()
+            }
+        }
+    }
 
     private fun correctRegisterUserData():Boolean{
         if (checkName() && checkPhone() && checkEmail() && checkPassword() && checkConfirmPassword()){
@@ -89,9 +92,10 @@ class RegisterActivity : AppCompatActivity() {
                 .requestEmail()
                 .build()
 
-            val googleClient: GoogleSignInClient = GoogleSignIn.getClient(this, googleConf)
 
-           startActivityForResult(googleClient.signInIntent,100)
+            val googleClient: GoogleSignInClient = GoogleSignIn.getClient(this, googleConf)
+            googleClient.signOut()
+            startActivityForResult(googleClient.signInIntent,100)
         }
 
     }
@@ -104,31 +108,27 @@ class RegisterActivity : AppCompatActivity() {
                 val account = task.getResult(ApiException::class.java)
                 if (account != null){
                     val credential = GoogleAuthProvider.getCredential(account.idToken, null)
-                    auth.signInWithCredential(credential)
-                        .addOnCompleteListener {
-                            if(it.isSuccessful){
-                                startActivity(Intent(this, MainActivity::class.java))
-                            }else{
-                                Toast.makeText(this,"El inicio de sesión con Google fue cancelado o ocurrió un error", Toast.LENGTH_SHORT).show()
-                            }
-                        }
-                    
+                        registerByGoogle(credential)
                 }
             }catch(e:ApiException){
                 Toast.makeText(this, e.toString(), Toast.LENGTH_SHORT).show()
             }
         }
     }
-    private val googleSignInLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
-        if (result.resultCode == RESULT_OK) {
-            // El inicio de sesión con Google fue exitoso, maneja la respuesta aquí
-            val task = GoogleSignIn.getSignedInAccountFromIntent(result.data)
-            val account = task.getResult(ApiException::class.java)
-            // ... Realiza las acciones necesarias con la cuenta de Google
-        } else {
-            Toast.makeText(this,"El inicio de sesión con Google fue cancelado o ocurrió un error", Toast.LENGTH_SHORT).show()
-        }
+
+    private fun registerByGoogle(credential:AuthCredential){
+        auth.signInWithCredential(credential)
+            .addOnCompleteListener {
+                if(it.isSuccessful){
+                    startActivity(Intent(this, MainActivity::class.java))
+                    saveUserDataGoogle()
+                    finish()
+                }else{
+                    Toast.makeText(this,"El inicio de sesión con Google fue cancelado o ocurrió un error", Toast.LENGTH_SHORT).show()
+                }
+            }
     }
+
     private fun clickOnBackToolbar(){
         binding.toolbar.setNavigationOnClickListener {
             finish()
@@ -289,17 +289,38 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun saveUserData(){
-        db.collection("users").document(binding.editEmail.text.toString()).set(
+        saveUserDataEmailandPassword()
+
+    }
+
+
+
+
+    private fun saveUserDataEmailandPassword(){
+        val userUID = auth.currentUser?.uid
+        db.collection("users").document(userUID?:binding.editEmail.text.toString()).set(
             hashMapOf(
+                "uid" to userUID,
                 "name" to binding.editName.text.toString(),
                 "phone" to binding.editPhone.text.toString(),
-                "email" to binding.editEmail.text.toString(),
-                "password" to binding.editPassword.text.toString()
+                "email" to binding.editEmail.text.toString()
             )
         )
 
     }
 
 
+    private fun saveUserDataGoogle() {
+        val user = auth.currentUser
+        val userUID = user?.uid
 
+        db.collection("users").document(userUID.toString()).set(
+                hashMapOf(
+                    "uid" to userUID,
+                    "name" to user?.displayName,
+                    "phone" to "Sin numero movil",
+                    "email" to user?.email
+                )
+            )
+        }
 }

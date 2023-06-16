@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.pawfect.R;
@@ -21,16 +22,34 @@ public final class AnimalItemBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
-  public final TextView animalDescription;
-
-  @NonNull
   public final ImageView animalImage;
 
-  private AnimalItemBinding(@NonNull CardView rootView, @NonNull TextView animalDescription,
-      @NonNull ImageView animalImage) {
+  @NonNull
+  public final ImageView imageAnimalGenre;
+
+  @NonNull
+  public final ImageView imageLocation;
+
+  @NonNull
+  public final ConstraintLayout layoutAnimal;
+
+  @NonNull
+  public final TextView textAnimalDistance;
+
+  @NonNull
+  public final TextView textAnimalName;
+
+  private AnimalItemBinding(@NonNull CardView rootView, @NonNull ImageView animalImage,
+      @NonNull ImageView imageAnimalGenre, @NonNull ImageView imageLocation,
+      @NonNull ConstraintLayout layoutAnimal, @NonNull TextView textAnimalDistance,
+      @NonNull TextView textAnimalName) {
     this.rootView = rootView;
-    this.animalDescription = animalDescription;
     this.animalImage = animalImage;
+    this.imageAnimalGenre = imageAnimalGenre;
+    this.imageLocation = imageLocation;
+    this.layoutAnimal = layoutAnimal;
+    this.textAnimalDistance = textAnimalDistance;
+    this.textAnimalName = textAnimalName;
   }
 
   @Override
@@ -60,19 +79,44 @@ public final class AnimalItemBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.animal_description;
-      TextView animalDescription = ViewBindings.findChildViewById(rootView, id);
-      if (animalDescription == null) {
-        break missingId;
-      }
-
       id = R.id.animal_image;
       ImageView animalImage = ViewBindings.findChildViewById(rootView, id);
       if (animalImage == null) {
         break missingId;
       }
 
-      return new AnimalItemBinding((CardView) rootView, animalDescription, animalImage);
+      id = R.id.image_animal_genre;
+      ImageView imageAnimalGenre = ViewBindings.findChildViewById(rootView, id);
+      if (imageAnimalGenre == null) {
+        break missingId;
+      }
+
+      id = R.id.image_location;
+      ImageView imageLocation = ViewBindings.findChildViewById(rootView, id);
+      if (imageLocation == null) {
+        break missingId;
+      }
+
+      id = R.id.layout_animal;
+      ConstraintLayout layoutAnimal = ViewBindings.findChildViewById(rootView, id);
+      if (layoutAnimal == null) {
+        break missingId;
+      }
+
+      id = R.id.text_animal_distance;
+      TextView textAnimalDistance = ViewBindings.findChildViewById(rootView, id);
+      if (textAnimalDistance == null) {
+        break missingId;
+      }
+
+      id = R.id.text_animal_name;
+      TextView textAnimalName = ViewBindings.findChildViewById(rootView, id);
+      if (textAnimalName == null) {
+        break missingId;
+      }
+
+      return new AnimalItemBinding((CardView) rootView, animalImage, imageAnimalGenre,
+          imageLocation, layoutAnimal, textAnimalDistance, textAnimalName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

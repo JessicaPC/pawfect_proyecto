@@ -2,8 +2,6 @@ package com.example.pawfect.ui.profile
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuInflater
@@ -11,36 +9,33 @@ import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
-import androidx.viewpager2.widget.ViewPager2
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
+import com.bumptech.glide.Glide
 import com.example.pawfect.R
 import com.example.pawfect.databinding.FragmentProfileBinding
+import com.example.pawfect.helpers.Utils
+import com.example.pawfect.model.Animal
 import com.example.pawfect.ui.LoginActivity
-import com.example.pawfect.ui.profile.adapter.FragmentPageAdapter
-import com.example.pawfect.ui.profile.fragments.AdoptionsFragment
-import com.example.pawfect.ui.profile.fragments.PublicationsFragment
-import com.google.android.material.tabs.TabLayout
-import com.google.android.material.tabs.TabLayoutMediator
+import com.example.pawfect.ui.contact.ContactPublicationAdapter
+import com.example.pawfect.ui.main.AnimalDetailsActivity
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.storage.FirebaseStorage
 
 class ProfileFragment : Fragment() {
-    private lateinit var binding : FragmentProfileBinding
-    private val auth : FirebaseAuth = FirebaseAuth.getInstance()
-    private lateinit var viewPager: ViewPager2
-    private lateinit var tabLayout: TabLayout
-    private lateinit var tabAdapter: FragmentPageAdapter
+    private lateinit var binding: FragmentProfileBinding
+    private val auth: FirebaseAuth = FirebaseAuth.getInstance()
     private val db = FirebaseFirestore.getInstance()
-    private lateinit var userDocumentRef: DocumentReference
-
+    private val PICK_SINGLE_IMAGE = 111
+    private lateinit var adapter: ContactPublicationAdapter
+    private val firebaseStorageRef = FirebaseStorage.getInstance().reference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
     }
-
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -49,44 +44,90 @@ class ProfileFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentProfileBinding.inflate(inflater, container, false)
 
-        // Inicializar ViewPager2 y TabLayout
-        viewPager = binding.viewpager
-        tabLayout = binding.tablayout
-
-
-        // Crear y asignar el adaptador del ViewPager2
-        tabAdapter = FragmentPageAdapter(childFragmentManager, lifecycle)
-        viewPager.adapter = tabAdapter
-
-        // Agregar los fragmentos al adaptador
-        tabAdapter.addFragment(PublicationsFragment())
-        tabAdapter.addFragment(AdoptionsFragment())
-
-        // Vincular el ViewPager2 con el TabLayout
-        TabLayoutMediator(tabLayout, viewPager) { tab, position ->
-            when (position) {
-                0 -> tab.text = "Publicaciones"
-                1 -> tab.text = "Adopciones"
-            }
-        }.attach()
-
-
         (requireActivity() as AppCompatActivity).setSupportActionBar(binding.toolbar)
         setHasOptionsMenu(true)
 
         initListeners()
-
-
+        initAdapter()
+        getPublications()
         return binding.root
     }
 
+    private fun initAdapter() {
+        binding.recyclerAnimals.layoutManager =
+            GridLayoutManager(requireActivity(), 1, GridLayoutManager.HORIZONTAL, false)
 
-    private fun initListeners(){
+        adapter = ContactPublicationAdapter(
+            onAnimalClick = { animal ->
+                startActivity(
+                    Intent(requireActivity(), AnimalDetailsActivity::class.java)
+                        .putExtra("ANIMAL", animal)
+                )
+            }
+        )
+        binding.recyclerAnimals.adapter = adapter
+    }
+
+    private fun initListeners() {
         recoverUserData()
         clickOnEditUserDataButton()
+        changeProfileImage()
 
     }
 
+    private fun changeProfileImage(){
+        binding.profileImg.setOnClickListener {
+            val intent = Intent()
+            intent.type = "image/*"
+            intent.action = Intent.ACTION_GET_CONTENT
+            startActivityForResult(
+                Intent.createChooser(
+                    intent, "Selecciona la imagen de perfil"
+                ), PICK_SINGLE_IMAGE
+            )
+        }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if (requestCode == PICK_SINGLE_IMAGE && resultCode == AppCompatActivity.RESULT_OK && data != null) {
+
+            data.data?.let { imageSelected ->
+                Glide.with(requireActivity())
+                    .load(imageSelected)
+                    .into(binding.profileImg)
+                val imageName = "${auth.currentUser?.uid}${System.currentTimeMillis()}.png"
+                val uploadImage =
+                    firebaseStorageRef.child("users/$imageName").putFile(imageSelected)
+                uploadImage.addOnSuccessListener {
+                    firebaseStorageRef.child("users/$imageName").downloadUrl.addOnSuccessListener {
+                        db.collection("users").document(auth.currentUser?.uid.toString()).update(
+                            "image", it
+                        )
+                        Toast.makeText(
+                            requireActivity(),
+                            "Se ha guardado la imagen correctamente",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }
+                }.addOnFailureListener {
+                    Toast.makeText(
+                        requireActivity(),
+                        "La imagen no se ha subido correctamente",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+            }
+
+        } else {
+            Toast.makeText(
+                requireActivity(),
+                "No has seleccionado ninguna imagen",
+                Toast.LENGTH_SHORT
+            ).show()
+        }
+    }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.settings_menu, menu)
@@ -100,21 +141,20 @@ class ProfileFragment : Fragment() {
                 clickOnLogOut()
                 true
             }
+
             else -> super.onOptionsItemSelected(item)
         }
     }
 
-
-
     private fun clickOnLogOut() {
-            auth.signOut()
-            startActivity(Intent(requireActivity(), LoginActivity::class.java))
-            requireActivity().finish()
-
+        auth.signOut()
+        startActivity(Intent(requireActivity(), LoginActivity::class.java))
+        requireActivity().finish()
     }
 
-    private fun clickOnEditUserDataButton(){
+    private fun clickOnEditUserDataButton() {
         binding.editProfileButton.setOnClickListener {
+
             val name = binding.nameText.text.toString()
             val email = binding.emailText.text.toString()
             val phone = binding.phoneText.text.toString()
@@ -123,140 +163,101 @@ class ProfileFragment : Fragment() {
             val bundle = Bundle().apply {
                 putString("name", name)
                 putString("phone", phone)
-                putString("email",email)
+                putString("email", email)
             }
 
-            val intent = Intent(requireContext(),EditProfileActivity::class.java)
-            intent.putExtra("profileBundle",bundle)
-            startActivity(intent)
-        }
-        /*
-        binding.editProfileButton.setOnClickListener {
-            if (isEditMode){
-                // El perfil ya está en modo de edición, realiza la lógica de guardado de datos aquí
-                saveProfileChanges()
-
-                // Cambia al modo de visualización del perfil
-                showProfileData()
-
-            }else{
-                // El perfil está en modo de visualización, cambia al modo de edición
-                showEditProfileForm()
-            }
-        }
-
-         */
-    }
-
-    /*
-    private fun saveProfileChanges() {
-        val name = binding.editName.text.toString()
-        val email = binding.editEmail.text.toString()
-
-        changeUserEmail(email)
-        userDocumentRef.update(
-            mapOf(
-                "name" to name,
-                "email" to email
-            )
-
-
-
-        ).addOnSuccessListener {
-            Toast.makeText(requireContext(), "Cambios guardados", Toast.LENGTH_SHORT).show()
-            showProfileData() // Cambiar al modo de visualización después de guardar los cambios
-            recoverUserData()
-        }.addOnFailureListener { e ->
-            Toast.makeText(requireContext(), "Error al guardar los cambios", Toast.LENGTH_SHORT).show()
-            Log.e("ProfileFragment", "Error al guardar los cambios", e)
-        }//   binding.inputName
-    }
-
-    private fun changeUserEmail(email:String){
-        auth.currentUser?.updateEmail(email)?.addOnCompleteListener {task ->
-            if (task.isSuccessful){
-                Toast.makeText(requireContext(),"Correo cambiado", Toast.LENGTH_SHORT).show()
-            }else{
-                Toast.makeText(requireContext(),"Se produjo un error al cambiar el correo", Toast.LENGTH_SHORT).show()
-            }
+            val intent = Intent(requireContext(), EditProfileActivity::class.java)
+            intent.putExtra("profileBundle", bundle)
+            launcher.launch(intent)
         }
     }
 
-    private fun showProfileData(){
-        showUserData()
-
-
-        binding.editProfileButton.text = "Editar Perfil"
-        isEditMode = false
-    }
-
-    private fun showEditProfileForm(){
-        hideUserData()
-
-        val currentName = binding.nameText.text.toString()
-        val currentEmail = binding.emailText.text.toString()
-        binding.editName.setText(currentName)
-        binding.editEmail.setText(currentEmail)
-
-        binding.editProfileButton.text = "Guardar Cambios"
-        isEditMode = true
-    }
-
-
-    private fun hideUserData(){
-        binding.nameText.visibility = View.INVISIBLE
-        binding.inputName.visibility = View.VISIBLE
-        binding.emailText.visibility = View.INVISIBLE
-        binding.inputEmail.visibility = View.VISIBLE
-        binding.locationText.visibility = View.INVISIBLE
-        binding.tablayout.visibility = View.INVISIBLE
-        binding.viewpager.visibility = View.INVISIBLE
-    }
-
-    private fun showUserData(){
-        binding.nameText.visibility = View.VISIBLE
-        binding.inputName.visibility = View.INVISIBLE
-        binding.emailText.visibility = View.VISIBLE
-        binding.inputEmail.visibility = View.INVISIBLE
-        binding.tablayout.visibility = View.VISIBLE
-        binding.viewpager.visibility = View.VISIBLE
-    }
-
-*/
-    private fun recoverUserData(){
-
+    private fun recoverUserData() {
         val user = auth.currentUser
-
-        val userEmail = user?.email
-        if (userEmail != null) {
-            val usersCollection = db.collection("users")
-            val query = usersCollection.whereEqualTo("email", userEmail)
-
-            query.get().addOnCompleteListener { task ->
+        db.collection("users").document(user?.uid.toString()).get()
+            .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
-                    val documents = task.result?.documents
-                    if (!documents.isNullOrEmpty()) {
-                        val userDocument = documents[0]
-                        val name = userDocument.getString("name")
-                        val phone = userDocument.getString("phone")
-                        // Mostrar los datos en las vistas correspondientes
-                        binding.nameText.text = name
-                        binding.phoneText.text = phone
+                    val data = task.result.data
+                    val name = data?.get("name") as String? ?: binding.nameText.text.toString()
+                    val phone = data?.get("phone") as String? ?: "Sin numero de telefono"
+                    val email = data?.get("email") as String? ?: binding.emailText.text.toString()
+                    val image = data?.get("image") as String?
+                    // Mostrar los datos en las vistas correspondientes
+                    binding.nameText.text = name
+                    binding.phoneText.text = phone
+                    binding.emailText.text = email
+
+                    image?.let {
+                        Glide.with(requireActivity())
+                            .load(it)
+                            .fallback(R.drawable.person_logo)
+                            .error(R.drawable.person_logo)
+                            .placeholder(R.drawable.person_logo)
+                            .into(binding.profileImg)
                     }
+
                 } else {
                     // Manejar errores al obtener los documentos de Firestore
-                    Toast.makeText(requireContext(), "Error al obtener los datos del usuario", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        requireContext(),
+                        "Error al obtener los datos del usuario",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+            }
+    }
+
+    private val launcher =
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { activityResult ->
+            if (activityResult.resultCode == AppCompatActivity.RESULT_OK) {
+                activityResult.data?.extras?.let { extras ->
+                    binding.emailText.text = extras.getString("email")
+                    binding.phoneText.text = extras.getString("phone")
+                    binding.nameText.text = extras.getString("name")
                 }
             }
         }
 
 
-        binding.nameText.text = user?.displayName
-        binding.emailText.text = user?.email
-        binding.phoneText.text = user?.phoneNumber
+    private fun getPublications(){
+        if(Utils.isNetworkAvailable(requireActivity())) {
+            val listAnimal = arrayListOf<Animal>()
+            db.collection("animals").whereEqualTo("uid", auth.currentUser?.uid).get()
+                .addOnSuccessListener {
+                    if(it.documents.size > 0) {
+                        for (animalData in it.documents) {
+                            var listImages = animalData.data?.get("image") as String
+                            listImages = listImages.removePrefix("[").removeSuffix("]")
 
+                            val animal = Animal().apply {
+                                name = animalData.data?.get("name") as String?
+                                age = animalData.data?.get("age") as String?
+                                genre = animalData.data?.get("genre") as String?
+                                userID = animalData.data?.get("uid") as String?
+                                id = animalData.id
+                                type = animalData.data?.get("type") as String?
+                                description = animalData.data?.get("description") as String?
+                                longitude = animalData.data?.get("longitude") as String?
+                                latitude = animalData.data?.get("latitude") as String?
+                                images = listImages.split(",")
+                            }
 
+                            listAnimal.add(animal)
+                        }
+
+                        adapter.submitList(listAnimal)
+                    }
+
+                }.addOnFailureListener {
+                    // Manejar errores al obtener los documentos de Firestore
+                    Toast.makeText(
+                        requireActivity(),
+                        "Error al obtener los datos del usuario",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+        }else{
+            Utils.showAlert("Error", "Revisa tu conexion a Internet", requireActivity())
+        }
     }
-
-
 }

@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.pawfect.app-mergeDebugResources-43:/values-cs/values-cs.xml",
+            "outputFile": "com.example.pawfect.app-mergeDebugResources-55:/values-cs/values-cs.xml",
             "map": [
                 {
-                    "source": "/Users/jpicazoc/.gradle/caches/transforms-3/e1567fc10e45fc3b0d691c668af048a4/transformed/play-services-base-18.0.1/res/values-cs/values.xml",
+                    "source": "/Users/jpicazoc/.gradle/caches/transforms-3/1a07fe07d2c94e0a72fe3591e32a71a3/transformed/navigation-ui-2.5.3/res/values-cs/values-cs.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,163",
+                        "endColumns": "107,126",
+                        "endOffsets": "158,285"
+                    },
+                    "to": {
+                        "startLines": "117,118",
+                        "startColumns": "4,4",
+                        "startOffsets": "10693,10801",
+                        "endColumns": "107,126",
+                        "endOffsets": "10796,10923"
+                    }
+                },
+                {
+                    "source": "/Users/jpicazoc/.gradle/caches/transforms-3/3b27d1c1d9449960d28cb5caa2b8d7d2/transformed/play-services-base-18.1.0/res/values-cs/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -105,23 +122,6 @@
                         "startOffsets": "3144,3242,3344,3445,3544,3649,3756,11090",
                         "endColumns": "97,101,100,98,104,106,118,100",
                         "endOffsets": "3237,3339,3440,3539,3644,3751,3870,11186"
-                    }
-                },
-                {
-                    "source": "/Users/jpicazoc/.gradle/caches/transforms-3/61f27083f6bf32d1f05c9be3b18c2059/transformed/navigation-ui-2.3.5/res/values-cs/values-cs.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,163",
-                        "endColumns": "107,126",
-                        "endOffsets": "158,285"
-                    },
-                    "to": {
-                        "startLines": "117,118",
-                        "startColumns": "4,4",
-                        "startOffsets": "10693,10801",
-                        "endColumns": "107,126",
-                        "endOffsets": "10796,10923"
                     }
                 }
             ]

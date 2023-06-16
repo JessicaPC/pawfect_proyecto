@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.pawfect.app-mergeDebugResources-43:/values-fr-rCA/values-fr-rCA.xml",
+            "outputFile": "com.example.pawfect.app-mergeDebugResources-55:/values-fr-rCA/values-fr-rCA.xml",
             "map": [
                 {
                     "source": "/Users/jpicazoc/.gradle/caches/transforms-3/41a6b3db4e18ebed93cb79e294de341f/transformed/material-1.5.0/res/values-fr-rCA/values-fr-rCA.xml",
@@ -74,7 +74,24 @@
                     }
                 },
                 {
-                    "source": "/Users/jpicazoc/.gradle/caches/transforms-3/61f27083f6bf32d1f05c9be3b18c2059/transformed/navigation-ui-2.3.5/res/values-fr-rCA/values-fr-rCA.xml",
+                    "source": "/Users/jpicazoc/.gradle/caches/transforms-3/3b27d1c1d9449960d28cb5caa2b8d7d2/transformed/play-services-base-18.1.0/res/values-fr-rCA/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "197,299,475,601,706,873,1002,1119,1228,1419,1527,1708,1840,1996,2171,2240,2300",
+                        "endColumns": "101,175,125,104,166,128,116,108,190,107,180,131,155,174,68,59,79",
+                        "endOffsets": "298,474,600,705,872,1001,1118,1227,1418,1526,1707,1839,1995,2170,2239,2299,2379"
+                    },
+                    "to": {
+                        "startLines": "44,45,46,47,48,49,50,51,53,54,55,56,57,58,59,60,61",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "4150,4256,4436,4566,4675,4846,4979,5100,5374,5569,5681,5866,6002,6162,6341,6414,6478",
+                        "endColumns": "105,179,129,108,170,132,120,112,194,111,184,135,159,178,72,63,83",
+                        "endOffsets": "4251,4431,4561,4670,4841,4974,5095,5208,5564,5676,5861,5997,6157,6336,6409,6473,6557"
+                    }
+                },
+                {
+                    "source": "/Users/jpicazoc/.gradle/caches/transforms-3/1a07fe07d2c94e0a72fe3591e32a71a3/transformed/navigation-ui-2.5.3/res/values-fr-rCA/values-fr-rCA.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -105,23 +122,6 @@
                         "startOffsets": "3120,3218,3320,3419,3521,3625,3729,11391",
                         "endColumns": "97,101,98,101,103,103,113,100",
                         "endOffsets": "3213,3315,3414,3516,3620,3724,3838,11487"
-                    }
-                },
-                {
-                    "source": "/Users/jpicazoc/.gradle/caches/transforms-3/e1567fc10e45fc3b0d691c668af048a4/transformed/play-services-base-18.0.1/res/values-fr-rCA/values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "197,299,475,601,706,873,1002,1119,1228,1419,1527,1708,1840,1996,2171,2240,2300",
-                        "endColumns": "101,175,125,104,166,128,116,108,190,107,180,131,155,174,68,59,79",
-                        "endOffsets": "298,474,600,705,872,1001,1118,1227,1418,1526,1707,1839,1995,2170,2239,2299,2379"
-                    },
-                    "to": {
-                        "startLines": "44,45,46,47,48,49,50,51,53,54,55,56,57,58,59,60,61",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "4150,4256,4436,4566,4675,4846,4979,5100,5374,5569,5681,5866,6002,6162,6341,6414,6478",
-                        "endColumns": "105,179,129,108,170,132,120,112,194,111,184,135,159,178,72,63,83",
-                        "endOffsets": "4251,4431,4561,4670,4841,4974,5095,5208,5564,5676,5861,5997,6157,6336,6409,6473,6557"
                     }
                 }
             ]

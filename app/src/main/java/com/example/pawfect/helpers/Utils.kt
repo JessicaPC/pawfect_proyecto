@@ -1,9 +1,14 @@
 package com.example.pawfect.helpers
 
+import android.app.ProgressDialog
 import android.content.Context
+import android.content.pm.PackageManager
+import android.location.LocationManager
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import androidx.appcompat.app.AlertDialog
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat.getSystemService
 
 object Utils {
     fun isNetworkAvailable(context: Context):Boolean{

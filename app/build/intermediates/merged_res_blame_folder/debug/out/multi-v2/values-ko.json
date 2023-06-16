@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.pawfect.app-mergeDebugResources-43:/values-ko/values-ko.xml",
+            "outputFile": "com.example.pawfect.app-mergeDebugResources-55:/values-ko/values-ko.xml",
             "map": [
                 {
-                    "source": "/Users/jpicazoc/.gradle/caches/transforms-3/e1567fc10e45fc3b0d691c668af048a4/transformed/play-services-base-18.0.1/res/values-ko/values.xml",
+                    "source": "/Users/jpicazoc/.gradle/caches/transforms-3/2a157015179626fcff6f37db6d3875de/transformed/browser-1.4.0/res/values-ko/values-ko.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,141,234,337",
+                        "endColumns": "85,92,102,93",
+                        "endOffsets": "136,229,332,426"
+                    },
+                    "to": {
+                        "startLines": "62,65,66,67",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "5791,6020,6113,6216",
+                        "endColumns": "85,92,102,93",
+                        "endOffsets": "5872,6108,6211,6305"
+                    }
+                },
+                {
+                    "source": "/Users/jpicazoc/.gradle/caches/transforms-3/3b27d1c1d9449960d28cb5caa2b8d7d2/transformed/play-services-base-18.1.0/res/values-ko/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -21,20 +38,20 @@
                     }
                 },
                 {
-                    "source": "/Users/jpicazoc/.gradle/caches/transforms-3/2a157015179626fcff6f37db6d3875de/transformed/browser-1.4.0/res/values-ko/values-ko.xml",
+                    "source": "/Users/jpicazoc/.gradle/caches/transforms-3/1a07fe07d2c94e0a72fe3591e32a71a3/transformed/navigation-ui-2.5.3/res/values-ko/values-ko.xml",
                     "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,141,234,337",
-                        "endColumns": "85,92,102,93",
-                        "endOffsets": "136,229,332,426"
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,155",
+                        "endColumns": "99,101",
+                        "endOffsets": "150,252"
                     },
                     "to": {
-                        "startLines": "62,65,66,67",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "5791,6020,6113,6216",
-                        "endColumns": "85,92,102,93",
-                        "endOffsets": "5872,6108,6211,6305"
+                        "startLines": "115,116",
+                        "startColumns": "4,4",
+                        "startOffsets": "9610,9710",
+                        "endColumns": "99,101",
+                        "endOffsets": "9705,9807"
                     }
                 },
                 {
@@ -88,23 +105,6 @@
                         "endLines": "5,33,41,42,43,63,64,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,117",
                         "endColumns": "12,68,82,105,74,61,80,61,56,86,57,57,58,56,53,94,55,56,53,65,103,74,76,90,64,64,78,66,65,63,69,76,67,70,66,69,79,76,79,81,71,64,71,47,63,74,76,61,63,62,83,78,79,79,71",
                         "endOffsets": "249,2898,3658,3764,3839,5934,6015,6367,6424,6511,6569,6627,6686,6743,6797,6892,6948,7005,7059,7125,7229,7304,7381,7472,7537,7602,7681,7748,7814,7878,7948,8025,8093,8164,8231,8301,8381,8458,8538,8620,8692,8757,8829,8877,8941,9016,9093,9155,9219,9282,9366,9445,9525,9605,9879"
-                    }
-                },
-                {
-                    "source": "/Users/jpicazoc/.gradle/caches/transforms-3/61f27083f6bf32d1f05c9be3b18c2059/transformed/navigation-ui-2.3.5/res/values-ko/values-ko.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,155",
-                        "endColumns": "99,101",
-                        "endOffsets": "150,252"
-                    },
-                    "to": {
-                        "startLines": "115,116",
-                        "startColumns": "4,4",
-                        "startOffsets": "9610,9710",
-                        "endColumns": "99,101",
-                        "endOffsets": "9705,9807"
                     }
                 },
                 {

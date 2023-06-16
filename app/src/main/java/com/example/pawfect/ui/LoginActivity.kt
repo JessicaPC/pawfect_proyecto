@@ -10,6 +10,7 @@ import android.widget.Toast
 import com.example.pawfect.R
 import com.example.pawfect.databinding.ActivityLoginBinding
 import com.example.pawfect.helpers.Utils
+import com.example.pawfect.ui.main.MainActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
@@ -43,7 +44,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun isUserLogged(){
         if (auth.currentUser != null){
-            startActivity(Intent(this,MainActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
             finish()
         }
     }
@@ -67,7 +68,7 @@ class LoginActivity : AppCompatActivity() {
                 .build()
 
             val googleClient: GoogleSignInClient = GoogleSignIn.getClient(this, googleConf)
-
+            googleClient.signOut()
             startActivityForResult(googleClient.signInIntent,100)
         }
 
@@ -84,12 +85,12 @@ class LoginActivity : AppCompatActivity() {
                     auth.signInWithCredential(credential)
                         .addOnCompleteListener {
                             if(it.isSuccessful){
+                                saveUserDataGoogle()
                                 startActivity(Intent(this, MainActivity::class.java))
                             }else{
                                 Toast.makeText(this, "Error registro", Toast.LENGTH_SHORT).show()
                             }
                         }
-
                 }
             }catch(e: ApiException){
                 Toast.makeText(this, e.toString(), Toast.LENGTH_SHORT).show()
@@ -98,26 +99,42 @@ class LoginActivity : AppCompatActivity() {
     }
 
 
+    private fun saveUserDataGoogle() {
+        val user = auth.currentUser
+        val userUID = user?.uid
 
+        db.collection("users").document(userUID.toString()).set(
+            hashMapOf(
+                "uid" to userUID,
+                "name" to user?.displayName,
+                "phone" to "Sin numero movil",
+                "email" to user?.email
+            )
+        )
+    }
 
     private fun clickOnLoginButton() {
         binding.loginButton.setOnClickListener {
             if (Utils.isNetworkAvailable(this)) {
-                if (checkEmail() && checkPassword()) {
-                    auth.signInWithEmailAndPassword(
-                        binding.editEmail.text.toString(),
-                        binding.editPassword.text.toString()
-                    ).addOnCompleteListener {
-                        if (it.isSuccessful) {
-                            startActivity(Intent(this, MainActivity::class.java))
-                            finish()
-                        } else {
-                            handleFailedSignIn(it.exception)
-                        }
-                    }
-                }
+                login()
             } else {
                 Utils.showAlert("Error", "Revisa tu conexion a Internet", this)
+            }
+        }
+    }
+
+    private fun login (){
+        if (checkEmail() && checkPassword()) {
+            auth.signInWithEmailAndPassword(
+                binding.editEmail.text.toString(),
+                binding.editPassword.text.toString()
+            ).addOnCompleteListener {
+                if (it.isSuccessful) {
+                    startActivity(Intent(this, MainActivity::class.java))
+                    finish()
+                } else {
+                    handleFailedSignIn(it.exception)
+                }
             }
         }
     }

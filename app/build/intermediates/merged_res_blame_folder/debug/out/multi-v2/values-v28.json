@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.pawfect.app-mergeDebugResources-43:/values-v28/values-v28.xml",
+            "outputFile": "com.example.pawfect.app-mergeDebugResources-55:/values-v28/values-v28.xml",
             "map": [
                 {
                     "source": "/Users/jpicazoc/.gradle/caches/transforms-3/66780b6d0ab0ea838791606c6a5077a2/transformed/appcompat-1.6.1/res/values-v28/values-v28.xml",

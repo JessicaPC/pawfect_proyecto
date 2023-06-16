@@ -47,17 +47,34 @@ dependencies {
     implementation 'com.google.android.gms:play-services-auth:20.5.0'
     implementation 'androidx.core:core-ktx:1.10.0'
     implementation 'com.google.firebase:firebase-analytics-ktx'
-    // Lottie animation
+    // Lottie animation https://www.youtube.com/watch?v=QIAi61O6rWo&t=401s
     implementation("com.airbnb.android:lottie:6.0.0")
-    // Bottom Nav Library
+    // Bottom Nav Library https://www.youtube.com/watch?v=TD-y2nI1D1s&list=PLBOCCLcvtWaA0R1xISMZ5T5Hp_9H0uXHU&index=19
     implementation 'nl.joery.animatedbottombar:library:1.1.0'
-    // Splash
+    // Splash https://www.youtube.com/watch?v=ksaaMt8Lo6U
     implementation 'androidx.core:core-splashscreen:1.0.1'
+    // Slider https://www.youtube.com/watch?v=68G2qKrfSJw
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'com.google.firebase:firebase-firestore:24.4.1'
     implementation 'com.google.firebase:firebase-firestore-ktx:24.6.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+    //Glide -> libreria para cargar url de imagen
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    //Firebase storage->  Guardar archivos en firebase (img,archivos...etc)
+    implementation 'com.google.firebase:firebase-storage-ktx:20.2.0'
+
+    // Localizacion
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+
+    //Shimmer (efecto cargando)
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+    // Swipe para actualizar
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'

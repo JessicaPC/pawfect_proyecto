@@ -4,29 +4,71 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="5dp"
-    >
+    app:cardCornerRadius="5dp"
+    app:cardUseCompatPadding="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_animal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/animal_image"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_animal_placeholder"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/animal_description"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:gravity="center"
-            android:padding="5px"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/text_animal_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="start|center_vertical"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/animal_name_example"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/animal_image"/>
+            app:layout_constraintTop_toBottomOf="@id/animal_image" />
+
+        <ImageView
+            android:id="@+id/image_animal_genre"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_gender_female"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@id/text_animal_name"
+            app:layout_constraintTop_toBottomOf="@id/animal_image"
+            app:layout_constraintBottom_toTopOf="@id/text_animal_distance"
+            />
+
+        <ImageView
+            android:id="@+id/image_location"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_location"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_animal_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/text_animal_distance"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="@string/animal_no_location"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center_vertical"
+            app:layout_constraintStart_toEndOf="@id/image_location"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_animal_name" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

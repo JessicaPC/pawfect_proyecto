@@ -1,50 +1,70 @@
 [
     {
-        "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-mergeDebugResources-44:/layout/fragment_home.xml",
-        "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/fragment_home.xml"
+        "merged": "com.example.pawfect.app-mergeDebugResources-56:/layout/animal_item.xml",
+        "source": "com.example.pawfect.app-main-59:/layout/animal_item.xml"
     },
     {
-        "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-mergeDebugResources-44:/layout/activity_recover_password.xml",
-        "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/activity_recover_password.xml"
+        "merged": "com.example.pawfect.app-mergeDebugResources-56:/layout/activity_edit_profile.xml",
+        "source": "com.example.pawfect.app-main-59:/layout/activity_edit_profile.xml"
     },
     {
-        "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-mergeDebugResources-44:/layout/activity_main.xml",
-        "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/activity_main.xml"
+        "merged": "com.example.pawfect.app-mergeDebugResources-56:/layout/fragment_home.xml",
+        "source": "com.example.pawfect.app-main-59:/layout/fragment_home.xml"
     },
     {
-        "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-mergeDebugResources-44:/layout/animal_item.xml",
-        "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/animal_item.xml"
+        "merged": "com.example.pawfect.app-mergeDebugResources-56:/layout/activity_register.xml",
+        "source": "com.example.pawfect.app-main-59:/layout/activity_register.xml"
     },
     {
-        "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-mergeDebugResources-44:/layout/activity_register.xml",
-        "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/activity_register.xml"
+        "merged": "com.example.pawfect.app-mergeDebugResources-56:/layout/fragment_favorites.xml",
+        "source": "com.example.pawfect.app-main-59:/layout/fragment_favorites.xml"
     },
     {
-        "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-mergeDebugResources-44:/layout/fragment_publications.xml",
-        "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/fragment_publications.xml"
+        "merged": "com.example.pawfect.app-mergeDebugResources-56:/layout/activity_publication.xml",
+        "source": "com.example.pawfect.app-main-59:/layout/activity_publication.xml"
     },
     {
-        "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-mergeDebugResources-44:/layout/activity_login.xml",
-        "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/activity_login.xml"
+        "merged": "com.example.pawfect.app-mergeDebugResources-56:/layout/activity_main.xml",
+        "source": "com.example.pawfect.app-main-59:/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-mergeDebugResources-44:/layout/activity_edit_profile.xml",
-        "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/activity_edit_profile.xml"
+        "merged": "com.example.pawfect.app-mergeDebugResources-56:/layout/animal_item_loader.xml",
+        "source": "com.example.pawfect.app-main-59:/layout/animal_item_loader.xml"
     },
     {
-        "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-mergeDebugResources-44:/layout/fragment_profile.xml",
-        "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/fragment_profile.xml"
+        "merged": "com.example.pawfect.app-mergeDebugResources-56:/layout/content_edit_animal.xml",
+        "source": "com.example.pawfect.app-main-59:/layout/content_edit_animal.xml"
     },
     {
-        "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-mergeDebugResources-44:/layout/fragment_adoptions.xml",
-        "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/fragment_adoptions.xml"
+        "merged": "com.example.pawfect.app-mergeDebugResources-56:/layout/contact_animal_item.xml",
+        "source": "com.example.pawfect.app-main-59:/layout/contact_animal_item.xml"
     },
     {
-        "merged": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-mergeDebugResources-44:/layout/fragment_favorites.xml",
-        "source": "/Users/jpicazoc/.gradle/daemon/8.0/com.example.pawfect.app-main-47:/layout/fragment_favorites.xml"
+        "merged": "com.example.pawfect.app-mergeDebugResources-56:/layout/fragment_profile.xml",
+        "source": "com.example.pawfect.app-main-59:/layout/fragment_profile.xml"
     },
     {
-        "merged": "com.example.pawfect.app-mergeDebugResources-44:/layout/activity_login.xml",
-        "source": "com.example.pawfect.app-main-47:/layout/activity_login.xml"
+        "merged": "com.example.pawfect.app-mergeDebugResources-56:/layout/activity_edit_animal.xml",
+        "source": "com.example.pawfect.app-main-59:/layout/activity_edit_animal.xml"
+    },
+    {
+        "merged": "com.example.pawfect.app-mergeDebugResources-56:/layout/activity_login.xml",
+        "source": "com.example.pawfect.app-main-59:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.pawfect.app-mergeDebugResources-56:/layout/activity_recover_password.xml",
+        "source": "com.example.pawfect.app-main-59:/layout/activity_recover_password.xml"
+    },
+    {
+        "merged": "com.example.pawfect.app-mergeDebugResources-56:/layout/item_slider_image.xml",
+        "source": "com.example.pawfect.app-main-59:/layout/item_slider_image.xml"
+    },
+    {
+        "merged": "com.example.pawfect.app-mergeDebugResources-56:/layout/activity_animal_details.xml",
+        "source": "com.example.pawfect.app-main-59:/layout/activity_animal_details.xml"
+    },
+    {
+        "merged": "com.example.pawfect.app-mergeDebugResources-56:/layout/activity_contact_profile.xml",
+        "source": "com.example.pawfect.app-main-59:/layout/activity_contact_profile.xml"
     }
 ]

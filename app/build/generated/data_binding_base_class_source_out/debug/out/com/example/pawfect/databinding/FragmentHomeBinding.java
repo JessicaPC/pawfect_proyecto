@@ -9,9 +9,14 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.pawfect.R;
+import com.facebook.shimmer.ShimmerFrameLayout;
+import com.google.android.material.chip.Chip;
+import com.google.android.material.chip.ChipGroup;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -24,12 +29,43 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final RecyclerView animalsRecycler;
 
   @NonNull
+  public final Chip chipCat;
+
+  @NonNull
+  public final Chip chipDog;
+
+  @NonNull
+  public final ChipGroup chipGroupFilter;
+
+  @NonNull
+  public final Chip chipOthers;
+
+  @NonNull
+  public final FloatingActionButton fabAddAnimal;
+
+  @NonNull
+  public final ShimmerFrameLayout shimmerAnimal;
+
+  @NonNull
+  public final SwipeRefreshLayout swipeRefresh;
+
+  @NonNull
   public final Toolbar toolbar;
 
   private FragmentHomeBinding(@NonNull ConstraintLayout rootView,
-      @NonNull RecyclerView animalsRecycler, @NonNull Toolbar toolbar) {
+      @NonNull RecyclerView animalsRecycler, @NonNull Chip chipCat, @NonNull Chip chipDog,
+      @NonNull ChipGroup chipGroupFilter, @NonNull Chip chipOthers,
+      @NonNull FloatingActionButton fabAddAnimal, @NonNull ShimmerFrameLayout shimmerAnimal,
+      @NonNull SwipeRefreshLayout swipeRefresh, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.animalsRecycler = animalsRecycler;
+    this.chipCat = chipCat;
+    this.chipDog = chipDog;
+    this.chipGroupFilter = chipGroupFilter;
+    this.chipOthers = chipOthers;
+    this.fabAddAnimal = fabAddAnimal;
+    this.shimmerAnimal = shimmerAnimal;
+    this.swipeRefresh = swipeRefresh;
     this.toolbar = toolbar;
   }
 
@@ -66,13 +102,56 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.chip_cat;
+      Chip chipCat = ViewBindings.findChildViewById(rootView, id);
+      if (chipCat == null) {
+        break missingId;
+      }
+
+      id = R.id.chip_dog;
+      Chip chipDog = ViewBindings.findChildViewById(rootView, id);
+      if (chipDog == null) {
+        break missingId;
+      }
+
+      id = R.id.chip_group_filter;
+      ChipGroup chipGroupFilter = ViewBindings.findChildViewById(rootView, id);
+      if (chipGroupFilter == null) {
+        break missingId;
+      }
+
+      id = R.id.chip_others;
+      Chip chipOthers = ViewBindings.findChildViewById(rootView, id);
+      if (chipOthers == null) {
+        break missingId;
+      }
+
+      id = R.id.fab_add_animal;
+      FloatingActionButton fabAddAnimal = ViewBindings.findChildViewById(rootView, id);
+      if (fabAddAnimal == null) {
+        break missingId;
+      }
+
+      id = R.id.shimmer_animal;
+      ShimmerFrameLayout shimmerAnimal = ViewBindings.findChildViewById(rootView, id);
+      if (shimmerAnimal == null) {
+        break missingId;
+      }
+
+      id = R.id.swipe_refresh;
+      SwipeRefreshLayout swipeRefresh = ViewBindings.findChildViewById(rootView, id);
+      if (swipeRefresh == null) {
+        break missingId;
+      }
+
       id = R.id.toolbar;
       Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
       if (toolbar == null) {
         break missingId;
       }
 
-      return new FragmentHomeBinding((ConstraintLayout) rootView, animalsRecycler, toolbar);
+      return new FragmentHomeBinding((ConstraintLayout) rootView, animalsRecycler, chipCat, chipDog,
+          chipGroupFilter, chipOthers, fabAddAnimal, shimmerAnimal, swipeRefresh, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
